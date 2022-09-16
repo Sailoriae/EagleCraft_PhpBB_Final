@@ -1,0 +1,30 @@
+﻿/* TEAM */
+	Fondatrice, admin, sysadmin et "développeuse" : SAILORIAE (Anciennement "Baroriam")
+	Compte Twitter : @Sailoriae
+	Localisation : Bordeaux, France
+
+	Fondateur, admin, et "community manager" amateur : AULDEOR (Anciennement "XDiaman")
+	Localisation : France
+
+/* THANKS */
+	Tous les joueurs d'EagleCraft ! <3
+	Liste complète : ./memberlist.php
+
+	Copains au début de toute cette histoire : Rahan_47, Gui3346, MrAcesnipers, Samoth47
+	Histoire complète d'EagleCraft : ./viewtopic.php?t=339
+
+	Et notre valeureuse équipe actuelle.
+	Liste : ./memberlist.php?mode=leaders
+
+	Le CMS phpBB, utilisé comme base de ce Site Web.
+	Site web : http://phpBB.com
+
+	Ubuntu, Spigot et Paper pour faire tourner le serveur Minecraft.
+	Mojang pour avoir développer Minecraft Java Edition et continuer d'y apporter des mises à jour.
+
+/* SITE */
+	Langue : Français (French)
+	Standards : HTML5, CSS3, PHP8
+	Doctype : HTML5
+	Composants : phpBB, jQuery en front-end
+	IDE : Notepad++ et Firefox (Pour les modifications apportées à phpBB)
