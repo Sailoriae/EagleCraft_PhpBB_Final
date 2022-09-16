@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Foire aux questions" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition)." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Foire aux questions" />
+
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition)." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+
+
+<title>EagleCraft - Foire aux questions</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-faq">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="faq.php.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Foire aux questions</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div class="panel bg1" id="faqlinks">
+			<div class="inner"><span class="corners-top"><span></span></span>
+				<div class="column1">
+				
+					<dl class="faq">
+						<dt><strong>PCU : Problèmes de connexion et d’inscription</strong></dt>
+						<dd><a href="faq.php.html#f0r0">Pourquoi ne puis-je pas me connecter ?</a></dd>
+						<dd><a href="faq.php.html#f0r1">Pourquoi ai-je besoin de m’inscrire, après tout ?</a></dd>
+						<dd><a href="faq.php.html#f0r2">Pourquoi suis-je déconnecté automatiquement ?</a></dd>
+						<dd><a href="faq.php.html#f0r3">Comment puis-je empêcher l’affichage de mon nom d’utilisateur dans la liste des utilisateurs en ligne ?</a></dd>
+						<dd><a href="faq.php.html#f0r4">J’ai perdu mon mot de passe !</a></dd>
+						<dd><a href="faq.php.html#f0r5">Je suis inscrit mais ne peux pas me connecter !</a></dd>
+						<dd><a href="faq.php.html#f0r6">Je m’étais déjà inscrit par le passé mais je ne peux à présent plus me connecter ?!</a></dd>
+						<dd><a href="faq.php.html#f0r7">Qu’est-ce que la COPPA ?</a></dd>
+						<dd><a href="faq.php.html#f0r8">Pourquoi ne puis-je pas m’inscrire ?</a></dd>
+						<dd><a href="faq.php.html#f0r9">À quoi sert « Supprimer tous les cookies du forum » ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>PCU : Préférences et réglages des utilisateurs</strong></dt>
+						<dd><a href="faq.php.html#f1r0">Comment puis-je modifier mes réglages ?</a></dd>
+						<dd><a href="faq.php.html#f1r1">L’heure n’est pas correcte !</a></dd>
+						<dd><a href="faq.php.html#f1r2">J’ai modifié le fuseau horaire mais l’heure n’est toujours pas correcte !</a></dd>
+						<dd><a href="faq.php.html#f1r3">Ma langue n’apparaît pas dans la liste !</a></dd>
+						<dd><a href="faq.php.html#f1r4">Comment puis-je afficher une image associée à mon nom d’utilisateur ?</a></dd>
+						<dd><a href="faq.php.html#f1r5">Quel est mon rang et comment puis-je le modifier ?</a></dd>
+						<dd><a href="faq.php.html#f1r6">Lorsque je clique sur le lien de courriel d’un utilisateur, il m’est demandé de me connecter ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Forum : Problèmes de publication</strong></dt>
+						<dd><a href="faq.php.html#f2r0">Comment puis-je publier un sujet dans un forum ?</a></dd>
+						<dd><a href="faq.php.html#f2r1">Comment puis-je éditer ou supprimer un message ?</a></dd>
+						<dd><a href="faq.php.html#f2r2">Comment puis-je ajouter une signature à un message ?</a></dd>
+						<dd><a href="faq.php.html#f2r3">Comment puis-je créer un sondage ?</a></dd>
+						<dd><a href="faq.php.html#f2r4">Pourquoi ne puis-je pas ajouter plus d’options à un sondage ?</a></dd>
+						<dd><a href="faq.php.html#f2r5">Comment puis-je éditer ou supprimer un sondage ?</a></dd>
+						<dd><a href="faq.php.html#f2r6">Pourquoi ne puis-je pas accéder à un forum ?</a></dd>
+						<dd><a href="faq.php.html#f2r7">Pourquoi ne puis-je pas insérer de pièces jointes ?</a></dd>
+						<dd><a href="faq.php.html#f2r8">Pourquoi ai-je reçu un avertissement ?</a></dd>
+						<dd><a href="faq.php.html#f2r9">Comment puis-je rapporter des messages à un modérateur ?</a></dd>
+						<dd><a href="faq.php.html#f2r10">À quoi sert le bouton « Sauvegarder » affiché lors de la rédaction d’un sujet ?</a></dd>
+						<dd><a href="faq.php.html#f2r11">Pourquoi mon message a-t-il besoin d’être approuvé ?</a></dd>
+						<dd><a href="faq.php.html#f2r12">Comment puis-je remonter mes sujets ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Forum : Mise en forme et types de sujets</strong></dt>
+						<dd><a href="faq.php.html#f3r0">Qu’est-ce que le BBCode ?</a></dd>
+						<dd><a href="faq.php.html#f3r1">Puis-je utiliser de l’HTML ?</a></dd>
+						<dd><a href="faq.php.html#f3r2">Que sont les émoticônes ?</a></dd>
+						<dd><a href="faq.php.html#f3r3">Puis-je insérer des images ?</a></dd>
+						<dd><a href="faq.php.html#f3r4">Que sont les annonces globales ?</a></dd>
+						<dd><a href="faq.php.html#f3r5">Que sont les annonces ?</a></dd>
+						<dd><a href="faq.php.html#f3r6">Que sont les notes ?</a></dd>
+						<dd><a href="faq.php.html#f3r7">Que sont les sujets verrouillés ?</a></dd>
+						<dd><a href="faq.php.html#f3r8">Que sont les icônes de sujet ?</a></dd>
+						
+					</dl>
+				
+				</div>
+
+				<div class="column2">
+				
+					<dl class="faq">
+						<dt><strong>Forum : Niveaux des utilisateurs et des groupes d’utilisateurs</strong></dt>
+						<dd><a href="faq.php.html#f4r0">Que sont les administrateurs ?</a></dd>
+						<dd><a href="faq.php.html#f4r1">Que sont les modérateurs ?</a></dd>
+						<dd><a href="faq.php.html#f4r2">Que sont les groupes d’utilisateurs ?</a></dd>
+						<dd><a href="faq.php.html#f4r3">Où sont les groupes d’utilisateurs et comment puis-je en rejoindre un ?</a></dd>
+						<dd><a href="faq.php.html#f4r4">Comment puis-je devenir le responsable d’un groupe d’utilisateurs ?</a></dd>
+						<dd><a href="faq.php.html#f4r5">Pourquoi certains groupes d’utilisateurs apparaissent dans une couleur différente ?</a></dd>
+						<dd><a href="faq.php.html#f4r6">Qu’est-ce qu’un « groupe d’utilisateurs par défaut » ?</a></dd>
+						<dd><a href="faq.php.html#f4r7">Qu’est-ce que le lien « Membres du Conseil » ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>PCU : Messagerie privée</strong></dt>
+						<dd><a href="faq.php.html#f5r0">Je ne peux pas envoyer de messages privés !</a></dd>
+						<dd><a href="faq.php.html#f5r1">Je continue à recevoir des messages privés non sollicités !</a></dd>
+						<dd><a href="faq.php.html#f5r2">J’ai reçu un pourriel ou un courriel indésirable de la part de quelqu’un sur ce forum !</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>PCU : Amis et ignorés</strong></dt>
+						<dd><a href="faq.php.html#f6r0">À quoi sert ma liste d’amis et d’ignorés ?</a></dd>
+						<dd><a href="faq.php.html#f6r1">Comment puis-je ajouter ou supprimer des utilisateurs de ma liste d’amis et d’ignorés ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Forum : Recherche dans les forums</strong></dt>
+						<dd><a href="faq.php.html#f7r0">Comment puis-je effectuer une recherche dans un ou des forums ?</a></dd>
+						<dd><a href="faq.php.html#f7r1">Pourquoi ma recherche ne renvoie aucun résultat ?</a></dd>
+						<dd><a href="faq.php.html#f7r2">Pourquoi ma recherche renvoie à une page blanche ?!</a></dd>
+						<dd><a href="faq.php.html#f7r3">Comment puis-je rechercher des utilisateurs ?</a></dd>
+						<dd><a href="faq.php.html#f7r4">Comment puis-je retrouver mes propres messages et sujets ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Forum : Signets et abonnements aux sujets</strong></dt>
+						<dd><a href="faq.php.html#f8r0">Quelle est la différence entre le signetage et l’abonnement ?</a></dd>
+						<dd><a href="faq.php.html#f8r1">Comment puis-je m’abonner à un forum ou à un sujet spécifique ?</a></dd>
+						<dd><a href="faq.php.html#f8r2">Comment puis-je résilier mes abonnements ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Forum : Pièces jointes</strong></dt>
+						<dd><a href="faq.php.html#f9r0">Quelles pièces jointes sont autorisées sur ce forum ?</a></dd>
+						<dd><a href="faq.php.html#f9r1">Comment puis-je retrouver toutes mes pièces jointes ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Site Web : À propos de phpBB3</strong></dt>
+						<dd><a href="faq.php.html#f10r0">Qui a développé ce logiciel de forum ?</a></dd>
+						<dd><a href="faq.php.html#f10r1">Qui dois-je contacter à propos de problèmes d’abus ou d’ordres légaux liés à ce forum ?</a></dd>
+						
+					</dl>
+				
+				</div>
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="clear"></div>
+
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>PCU : Problèmes de connexion et d’inscription</h3>
+			
+				<dl class="faq">
+					<dt id="f0r0"><strong>Pourquoi ne puis-je pas me connecter ?</strong></dt>
+					<p>Il y a plusieurs raisons qui peuvent en être la cause. Premièrement, assurez-vous que votre nom d’utilisateur et votre mot de passe soient corrects. S’ils le sont, contactez le propriétaire du forum afin de vous assurer de ne pas avoir été banni. Il est également possible que le propriétaire du site internet ait une erreur de configuration de son côté et qu’il soit nécessaire de la corriger.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r1"><strong>Pourquoi ai-je besoin de m’inscrire, après tout ?</strong></dt>
+					<p>Vous pouvez ne pas le faire, il appartient à l’administrateur du forum d’exiger ou non que vous soyez inscrit afin de pouvoir publier des messages. Cependant, l’inscription vous donnera accès à des fonctionnalités supplémentaires qui ne sont pas disponibles aux visiteurs, comme les avatars personnalisés, la messagerie privée, l’envoi de courriels aux autres utilisateurs, l’adhésion à un groupe d’utilisateurs, etc. Ceci ne vous prend qu’un court instant et nous vous recommandons par conséquent de le faire.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r2"><strong>Pourquoi suis-je déconnecté automatiquement ?</strong></dt>
+					<p>Si vous ne cochez pas la case <em>Me connecter automatiquement</em> lors de votre connexion, vous ne resterez connecté au forum que pour une période prédéfinie. Ceci permet d’éviter que votre compte soit utilisé par quelqu’un d’autre. Pour rester connecté, veuillez cocher la case correspondante lors de votre connexion. Ceci n’est pas recommandé si vous accédez au forum par l’intermédiaire d’un ordinateur public, comme par exemple dans une librairie, un cybercafé, une université, etc. Si vous n’arrivez pas à trouver cette case à cocher, il est probable qu’un administrateur ait désactivé cette fonctionnalité.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r3"><strong>Comment puis-je empêcher l’affichage de mon nom d’utilisateur dans la liste des utilisateurs en ligne ?</strong></dt>
+					<p>Dans le panneau de contrôle de l’utilisateur, en-dessous des « Préférences du forum », vous trouverez l’option <em>Masquer votre statut en ligne</em>. Activez cette option en cochant <samp>Oui</samp> afin de n’être visible qu’aux administrateurs, aux modérateurs et à vous-même. Vous serez compté(e) comme étant un utilisateur invisible.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r4"><strong>J’ai perdu mon mot de passe !</strong></dt>
+					<p>Pas de panique ! Bien que votre mot de passe ne puisse pas être récupéré, il peut facilement être réinitialisé. Rendez-vous sur la page de connexion et cliquez sur <em>J’ai perdu mon mot de passe</em>. Suivez les instructions et vous devriez être en mesure de pouvoir vous connecter de nouveau dans peu de temps.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r5"><strong>Je suis inscrit mais ne peux pas me connecter !</strong></dt>
+					<p>Premièrement, vérifiez votre nom d’utilisateur et votre mot de passe. S’ils sont corrects, alors une des deux choses suivantes a pu s’être produite. Si le support de la COPPA est activé et que vous avez spécifié avoir en dessous de 13 ans pendant l’inscription, vous devrez suivre les instructions que vous avez reçues. Certains forums exigeront également que les nouvelles inscriptions doivent être activées, soit par vous-même ou soit par un administrateur, avant que vous puissiez ouvrir une session ; cette information était présente lors de votre inscription. Si vous aviez reçu un courriel, consultez les instructions. Si vous ne recevez pas de courriel, vous avez probablement spécifié une mauvaise adresse de courrier électronique ou le courriel a été filtré en tant que pourriel. Si vous êtes certain(e) que l’adresse de courrier électronique que vous avez spécifiée était correcte, essayez de contacter un administrateur.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r6"><strong>Je m’étais déjà inscrit par le passé mais je ne peux à présent plus me connecter ?!</strong></dt>
+					<p>Il est possible qu’un administrateur ait désactivé ou supprimé votre compte pour une quelconque raison. De plus, beaucoup de forums suppriment périodiquement les utilisateurs qui n’ont rien publiés depuis un certain temps afin de réduire la taille de leur base de données. Si tel était le cas, inscrivez-vous à nouveau et essayez de participer plus activement aux discussions sur le forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r7"><strong>Qu’est-ce que la COPPA ?</strong></dt>
+					<p>La COPPA (Child Online Privacy and Protection Act) est une loi des États-Unis d’Amérique qui demande aux sites internet collectant potentiellement des informations sur les mineurs âgés de moins de 13 ans un consentement écrit des parents ou des tuteurs légaux des mineurs concernés. Si vous ne savez pas si cette loi s’applique également aux mineurs âgés de moins de 13 ans inscrits sur votre forum, nous vous conseillons de contacter un conseiller juridique ou un avocat qui pourront vous fournir ce type de renseignement. Veuillez noter que le phpBB Group ne peut pas vous fournir d’assistance légale et n’est donc pas l’organisme à contacter, excepté pour ce qui est décrit ci-dessous.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r8"><strong>Pourquoi ne puis-je pas m’inscrire ?</strong></dt>
+					<p>Il est possible que le propriétaire du site internet ait banni votre adresse IP ou interdit le nom d’utilisateur que vous souhaitez utiliser. Le propriétaire du forum peut également avoir décidé de désactiver les inscriptions afin d’empêcher tous les nouveaux visiteurs de s’inscrire. Pour plus d’informations, veuillez contacter un administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f0r9"><strong>À quoi sert « Supprimer tous les cookies du forum » ?</strong></dt>
+					<p>L’option « Supprimer tous les cookies du forum » vous permet d’effacer tous les cookies générés par phpBB3 qui conservent votre authentification et votre connexion au forum. Les cookies permettent également d’enregistrer le statut des messages, s’ils sont lus ou non lus, si cette fonctionnalité a été activée par le propriétaire du forum. Si vous rencontrez des problèmes récurrents de connexion et de déconnexion au forum, essayez de supprimer les cookies.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>PCU : Préférences et réglages des utilisateurs</h3>
+			
+				<dl class="faq">
+					<dt id="f1r0"><strong>Comment puis-je modifier mes réglages ?</strong></dt>
+					<p>Si vous êtes un utilisateur inscrit, tous vos réglages sont stockés dans la base de données du forum. Si vous souhaitez les modifier, rendez-vous sur votre panneau de contrôle de l’utilisateur ; ce lien se situe généralement en haut des pages du forum. Ce système vous permettra de modifier tous vos réglages et toutes vos préférences.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r1"><strong>L’heure n’est pas correcte !</strong></dt>
+					<p>Il est possible que l’heure affichée soit réglée sur un fuseau horaire différent de celui dans lequel vous êtes. Si tel était le cas, rendez-vous sur votre panneau de contrôle de l’utilisateur et modifiez le fuseau horaire afin de trouver votre zone adéquate, par exemple Londres, Paris, New York, Sydney, etc. Veuillez noter que la modification du fuseau horaire, comme la plupart des réglages, n’est accessible qu’aux utilisateurs inscrits. Si vous n’êtes pas inscrit, c’est l’occasion idéale de le faire.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r2"><strong>J’ai modifié le fuseau horaire mais l’heure n’est toujours pas correcte !</strong></dt>
+					<p>Si vous êtes certain(e) d’avoir correctement réglé le fuseau horaire et l’heure d’été mais que l’heure n’est toujours pas correcte, il est probable que l’heure de l’horloge du serveur soit erronée. Veuillez contacter un administrateur afin de lui communiquer ce problème.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r3"><strong>Ma langue n’apparaît pas dans la liste !</strong></dt>
+					<p>Soit l’administrateur n’a pas installé votre langue sur le forum, soit personne n’a encore traduit le logiciel dans votre langue. Essayez de demander à un administrateur du forum s’il est possible qu’il puisse installer l’archive de langue que vous souhaitez. Si l’archive de langue désirée n’existe pas, vous êtes libre de vous porter volontaire et commencer une nouvelle traduction. Pour plus d’informations, veuillez vous rendre sur le site officiel (accessible depuis un des liens situés en bas de toutes les pages du forum).</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r4"><strong>Comment puis-je afficher une image associée à mon nom d’utilisateur ?</strong></dt>
+					<p>Deux types d’images, visibles lors de la consultation de messages, peuvent être associés à votre nom d’utilisateur. L’un d’entre eux peut être une image associée à votre rang, généralement en forme d’étoiles, de carrés ou de ronds, qui indiquent le nombre de messages à votre actif ou votre statut sur le forum. L’autre type, habituellement une image plus imposante, est connue sous le nom d’avatar et est généralement unique et personnelle à chaque utilisateur. C’est à l’administrateur du forum d’activer ou non les avatars et de décider de la manière dont ils sont mis à disposition. Si vous ne pouvez pas utiliser les avatars, contactez l’administrateur du forum et demandez-lui pour quelles raisons a t-il souhaité désactiver cette fonctionnalité.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r5"><strong>Quel est mon rang et comment puis-je le modifier ?</strong></dt>
+					<p>Les rangs, qui apparaissent en dessous de votre nom d’utilisateur, indiquent le nombre de messages que vous avez à votre actif ou identifient certains utilisateurs spéciaux, comme les modérateurs et les administrateurs. Dans la plupart des cas, seul un administrateur du forum peut modifier le texte des rangs du forum. Merci de ne pas abuser de ce système en publiant inutilement des messages afin d’augmenter votre rang sur le forum. Beaucoup de forums ne toléreront pas ceci et un modérateur ou un administrateur abaissera votre compteur de messages.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r6"><strong>Lorsque je clique sur le lien de courriel d’un utilisateur, il m’est demandé de me connecter ?</strong></dt>
+					<p>Si l’administrateur a activé cette fonctionnalité, seuls les utilisateurs inscrits peuvent envoyer des courriels aux autres utilisateurs par l’intermédiaire d’un formulaire. Ceci permet d’empêcher une utilisation malveillante du système de messagerie électronique par des utilisateurs anonymes ou des robots.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Problèmes de publication</h3>
+			
+				<dl class="faq">
+					<dt id="f2r0"><strong>Comment puis-je publier un sujet dans un forum ?</strong></dt>
+					<p>Pour publier un nouveau sujet dans un forum, cliquez sur le bouton adéquat situé sur l’écran du forum ou du sujet. Il se peut que vous ayez besoin d’être inscrit avant de pouvoir rédiger un message. Sur chaque forum, une liste de vos permissions est affichée en bas de l’écran du forum ou du sujet. Par exemple : vous pouvez publier de nouveaux sujets, vous pouvez voter dans les sondages, etc.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r1"><strong>Comment puis-je éditer ou supprimer un message ?</strong></dt>
+					<p>À moins que vous ne soyez un administrateur ou un modérateur du forum, vous ne pouvez éditer ou supprimer que vos propres messages. Vous pouvez éditer un de vos messages en cliquant le bouton adéquat, parfois dans une limite de temps après que le message initial ait été publié. Si quelqu’un a déjà répondu au message, un petit texte situé en dessous du message énumèrera le nombre de fois que vous l’avez édité, contenant la date et l’heure de l’édition. Ce petit texte n’apparaîtra pas s’il s’agit d’une édition effectuée par un modérateur ou un administrateur, bien qu’ils puissent prendre l’initiative de rédiger une note discrète exprimant la raison de leur édition. Veuillez noter que les utilisateurs normaux ne peuvent pas supprimer leur propre message si une réponse a été publiée.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r2"><strong>Comment puis-je ajouter une signature à un message ?</strong></dt>
+					<p>Pour ajouter une signature à un message, vous devez tout d’abord en créer une par l’intermédiaire de votre panneau de contrôle de l’utilisateur. Une fois créée, vous pouvez cocher la case <em>Insérer une signature</em> sur le formulaire de rédaction afin d’insérer votre signature. Vous pouvez également ajouter une signature qui sera insérée à tous vos messages en cochant la case appropriée dans votre profil. Si vous choisissez cette dernière option, il ne vous sera plus utile de spécifier sur chaque message votre souhait d’insérer votre signature.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r3"><strong>Comment puis-je créer un sondage ?</strong></dt>
+					<p>Lorsque vous rédigez un nouveau sujet ou éditez le premier message d’un sujet, cliquez sur l’onglet « Création d’un sondage », situé en-dessous du formulaire principal de rédaction ; si cet onglet n’est pas disponible, il est probable que vous n’ayez pas les permissions appropriées afin de créer des sondages. Saisissez le titre du sondage en incluant au moins deux options dans les champs adéquats, chaque option devant être insérée sur une nouvelle ligne. Vous pouvez régler le nombre d’options que les utilisateurs peuvent insérer en sélectionnant, lors du vote, le réglage des « Options par utilisateur ». Vous pouvez également spécifier une limite de temps en jours, puis enfin autoriser ou non les utilisateurs à modifier leurs votes.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r4"><strong>Pourquoi ne puis-je pas ajouter plus d’options à un sondage ?</strong></dt>
+					<p>La limite d’options d’un sondage est réglée par l’administrateur du forum. Si le nombre d’options que vous pouvez ajouter à un sondage vous semble trop restreint, demandez à un administrateur du forum s’il est possible de l’augmenter.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r5"><strong>Comment puis-je éditer ou supprimer un sondage ?</strong></dt>
+					<p>Comme pour les messages, les sondages ne peuvent être édités que par leur auteur, un modérateur ou un administrateur. Pour éditer un sondage, éditez tout simplement le premier message du sujet car le sondage est obligatoirement associé à ce dernier. Si personne n’a encore voté, il est possible de supprimer le sondage ou d’éditer ses options. Cependant, si des votes ont été exprimés, seuls les modérateurs ou les administrateurs sont habilités à éditer ou supprimer le sondage. Ceci empêche de modifier les options d’un sondage en cours.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r6"><strong>Pourquoi ne puis-je pas accéder à un forum ?</strong></dt>
+					<p>Certains forums peuvent être limités à certains utilisateurs ou groupes d’utilisateurs. Pour consulter, lire, publier ou réaliser n’importe quelle autre action, vous avez besoin de permissions spéciales. Contactez un modérateur ou un administrateur du forum afin de demander votre accès.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r7"><strong>Pourquoi ne puis-je pas insérer de pièces jointes ?</strong></dt>
+					<p>Les permissions permettant d’insérer des pièces jointes sont accordées par forum, par groupe ou par utilisateur. L’administrateur du forum n’a peut-être pas autorisé l’insertion de pièces jointes dans le forum concerné, ou seuls certains groupes détiennent cette autorisation. Pour plus d’informations, veuillez contacter un administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r8"><strong>Pourquoi ai-je reçu un avertissement ?</strong></dt>
+					<p>Chaque forum a son propre ensemble de règles. Si vous ne respectez pas une de ces règles, vous recevrez un avertissement. Veuillez noter que cette décision n’appartient qu’à l’administrateur du forum concerné, le phpBB Group n’est en aucun cas responsable de ce qui est appliqué ou non. Pour plus d’informations, veuillez contacter un administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r9"><strong>Comment puis-je rapporter des messages à un modérateur ?</strong></dt>
+					<p>Si l’administrateur du forum a activé cette fonctionnalité, un bouton à cette fin devrait être affiché à côté du message que vous souhaitez rapporter. En cliquant sur celui-ci, vous trouverez toutes les étapes nécessaires afin de rapporter le message.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r10"><strong>À quoi sert le bouton « Sauvegarder » affiché lors de la rédaction d’un sujet ?</strong></dt>
+					<p>Il vous permet de sauvegarder les messages qui doivent être complétés et envoyés ultérieurement. Rendez-vous sur votre panneau de contrôle de l’utilisateur afin de recharger un message sauvegardé.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r11"><strong>Pourquoi mon message a-t-il besoin d’être approuvé ?</strong></dt>
+					<p>L’administrateur du forum peut décider que les messages que vous publiez sur le forum doivent être vérifiés avant d’être publiés. Il est également possible que l’administrateur vous ait placé dans un groupe d’utilisateurs pour lequel il juge nécessaire cette action. Pour plus d’informations, veuillez contacter un administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r12"><strong>Comment puis-je remonter mes sujets ?</strong></dt>
+					<p>En cliquant sur le lien « Remonter le sujet » lorsque vous êtes en train de consulter un sujet, vous pouvez remonter celui-ci en haut de la liste des sujets, à la première page du forum. Cependant, si vous ne voyez pas ce lien, cette fonctionnalité a peut-être été désactivée ou le temps d’attente nécessaire entre les remontées n’a peut-être pas encore été atteint. Il est également possible de remonter le sujet simplement en y répondant, mais assurez-vous de le faire tout en respectant les règles du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Mise en forme et types de sujets</h3>
+			
+				<dl class="faq">
+					<dt id="f3r0"><strong>Qu’est-ce que le BBCode ?</strong></dt>
+					<p>Le BBCode est une implémentation spéciale de l’HTML, vous offrant un meilleur contrôle sur la mise en forme d’un message. L’utilisation du BBCode est déterminée par l’administrateur mais il vous est également possible de la désactiver sur chaque message depuis le formulaire de rédaction. Le BBCode est similaire à l’architecture de l’HTML, les balises sont contenues entre des crochets [ et ] à la place de &lt; et &gt;. Pour plus d’informations à propos du BBCode, veuillez consulter le guide qui est accessible depuis la page de rédaction.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r1"><strong>Puis-je utiliser de l’HTML ?</strong></dt>
+					<p>Non, il n’est pas possible d’utiliser de l’HTML sur ce forum. La majeure partie de la mise en forme qui peut être réalisée avec de l’HTML peut également être obtenue grâce à l’utilisation du BBCode.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r2"><strong>Que sont les émoticônes ?</strong></dt>
+					<p>Les émoticônes sont de petites images qui peuvent être utilisées grâce à l’utilisation d’un code court et qui permettent d’exprimer des sentiments. Par exemple, « :) » exprime la joie alors qu’au contraire « :( » exprime la tristesse. Vous pouvez consulter la liste complète des émoticônes depuis le formulaire de rédaction. Essayez cependant de ne pas abuser des émoticônes, elles peuvent rapidement rendre un message illisible et un modérateur pourrait décider de l’éditer ou de le supprimer complètement. L’administrateur du forum peut également limiter le nombre d’émoticônes qui peuvent être insérées dans un message.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r3"><strong>Puis-je insérer des images ?</strong></dt>
+					<p>Oui, vous pouvez insérer des images dans vos messages. Si l’administrateur du forum a autorisé l’insertion de pièces jointes, vous pourrez transférer des images sur le forum. Dans le cas contraire, vous devrez insérer un lien pointant vers une image stockée sur un serveur internet public, comme http://www.exemple.com/mon-image.gif (Attention, il se peut que la Content Security Policy bloque les URLs http://, et n’accepte que les https://). Vous ne pourrez cependant ni insérer de lien pointant vers des images stockées sur votre propre ordinateur (à moins, bien évidemment, que celui-ci soit en lui-même un serveur internet), ni insérer de lien pointant vers des images stockées derrière un quelconque système d’authentification, comme par exemple les services de messagerie électronique de Hotmail ou de Yahoo, les sites protégés par un mot de passe, etc. Pour insérer une image, utilisez la balise BBCode [img].</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r4"><strong>Que sont les annonces globales ?</strong></dt>
+					<p>Les annonces globales contiennent des informations très importantes et vous devriez les consulter le plus rapidement possible. Elles apparaissent en haut de chaque forum et dans votre panneau de contrôle de l’utilisateur. Les permissions concernant les annonces globales sont définies par l’administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r5"><strong>Que sont les annonces ?</strong></dt>
+					<p>Les annonces contiennent souvent des informations importantes sur le forum dans lequel vous naviguez et vous devriez les consulter le plus rapidement possible. Les annonces apparaissent en haut de chaque page du forum dans lequel elles ont été publiées. Tout comme les annonces globales, les permissions concernant les annonces sont définies par l’administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r6"><strong>Que sont les notes ?</strong></dt>
+					<p>Les notes apparaissent en dessous des annonces et seulement sur la première page du forum concerné. Elles sont souvent assez importantes et il est recommandé de les consulter dès que vous en avez la possibilité. Tout comme les annonces et les annonces globales, les permissions concernant les notes sont définies par l’administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r7"><strong>Que sont les sujets verrouillés ?</strong></dt>
+					<p>Les sujets verrouillés sont des sujets dans lesquels les utilisateurs ne peuvent plus répondre et dans lesquels les sondages sont automatiquement expirés. Les sujets peuvent être verrouillés pour de nombreuses raisons par un modérateur ou un administrateur du forum. Vous pouvez également verrouiller vos propres sujets si l’administrateur en a décidé ainsi.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r8"><strong>Que sont les icônes de sujet ?</strong></dt>
+					<p>Les icônes de sujet sont de petites images que l’auteur peut insérer afin d’illustrer le contenu de son sujet. L’administrateur du forum peut ne pas avoir activé cette fonctionnalité.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Niveaux des utilisateurs et des groupes d’utilisateurs</h3>
+			
+				<dl class="faq">
+					<dt id="f4r0"><strong>Que sont les administrateurs ?</strong></dt>
+					<p>Les administrateurs sont les membres possédant le plus haut niveau de contrôle sur le forum. Ces utilisateurs peuvent contrôler toutes les opérations du forum, telles que le réglage des permissions, le bannissement d’utilisateurs, la création de groupes d’utilisateurs ou de modérateurs, etc. Ils peuvent également être abilités à modérer l’ensemble des forums. Tout ceci dépend des réglages effectués par le fondateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r1"><strong>Que sont les modérateurs ?</strong></dt>
+					<p>Les modérateurs sont des utilisateurs individuels (ou des groupes d’utilisateurs individuels) qui surveillent jour après jour les forums. Ils ont la possibilité d’éditer ou de supprimer les sujets, les verrouiller, les déverrouiller, les déplacer, les fusionner et les diviser dans le forum qu’ils modèrent. En règle générale, les modérateurs sont présents pour éviter que les utilisateurs fassent du hors-sujet ou publient du contenu abusif ou offensant.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r2"><strong>Que sont les groupes d’utilisateurs ?</strong></dt>
+					<p>Les groupes d’utilisateurs sont une façon pour les administrateurs du forum de regrouper plusieurs utilisateurs. Chaque utilisateur peut appartenir à plusieurs groupes et chaque groupe peut détenir des permissions individuelles. Ceci facilite les tâches aux administrateurs qui pourront modifier les permissions de plusieurs utilisateurs en une seule fois, ou encore leur accorder des pouvoirs de modération, ou bien leur donner accès à un forum privé.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r3"><strong>Où sont les groupes d’utilisateurs et comment puis-je en rejoindre un ?</strong></dt>
+					<p>Vous pouvez consulter tous les groupes d’utilisateurs par l’intermédiaire du lien « Groupes d’utilisateurs » depuis votre panneau de contrôle de l’utilisateur. Si vous souhaitez en rejoindre un, cliquez sur le bouton approprié. Cependant, tous les groupes d’utilisateurs ne sont pas ouverts aux nouvelles adhésions. Certains peuvent nécessiter une approbation, d’autres peuvent être fermés et d’autres peuvent même être invisibles. Si le groupe est ouvert, vous pouvez le rejoindre en cliquant sur le bouton approprié. S’il nécessite une approbation, cliquez également sur le bouton approprié. Le responsable du groupe d’utilisateurs devra approuver votre requête et pourra vous demander pourquoi vous souhaitez le rejoindre. Merci de ne pas harceler un responsable de groupe s’il refuse votre requête : il doit avoir ses propres raisons.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r4"><strong>Comment puis-je devenir le responsable d’un groupe d’utilisateurs ?</strong></dt>
+					<p>Le responsable d’un groupe d’utilisateurs est généralement assigné lorsque les groupes d’utilisateurs sont initialement créés par un administrateur du forum. Si vous êtes intéressé(e) par la création d’un groupe d’utilisateurs, votre premier contact devrait être un administrateur ; essayez de lui envoyer un message privé.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r5"><strong>Pourquoi certains groupes d’utilisateurs apparaissent dans une couleur différente ?</strong></dt>
+					<p>Les administrateurs du forum peuvent assigner une couleur aux membres d’un groupe d’utilisateurs afin de faciliter leur identification.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r6"><strong>Qu’est-ce qu’un « groupe d’utilisateurs par défaut » ?</strong></dt>
+					<p>Si vous êtes membre de plus d’un groupe d’utilisateurs, votre groupe d’utilisateurs par défaut est utilisé afin de déterminer quelle sera la couleur et le rang qui vous sera assigné par défaut. L’administrateur du forum peut vous donner la permission de modifier vous-même votre groupe d’utilisateurs par défaut par l’intermédiaire de votre panneau de contrôle de l’utilisateur.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f4r7"><strong>Qu’est-ce que le lien « Membres du Conseil » ?</strong></dt>
+					<p>Cette page liste les Membres du Conseil, que sont les administrateurs et les modérateurs, en plus de quelques informations tels que les forums qu’ils modèrent.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>PCU : Messagerie privée</h3>
+			
+				<dl class="faq">
+					<dt id="f5r0"><strong>Je ne peux pas envoyer de messages privés !</strong></dt>
+					<p>Trois raisons peuvent en être la cause ; soit vous n’êtes pas inscrit(e) et connecté(e), soit un administrateur a désactivé entièrement la messagerie privée sur le forum, soit un des administrateurs vous empêche d’envoyer des messages privés. Pour plus d’informations, veuillez contacter l’administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f5r1"><strong>Je continue à recevoir des messages privés non sollicités !</strong></dt>
+					<p>Vous pouvez empêcher un utilisateur de vous envoyer des messages privés en utilisant les règles de messages depuis votre panneau de contrôle de l’utilisateur. Si vous recevez des messages privés de manière abusive de la part d’un autre utilisateur, informez-en un administrateur ; ils peuvent empêcher complètement un utilisateur d’envoyer des messages privés.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f5r2"><strong>J’ai reçu un pourriel ou un courriel indésirable de la part de quelqu’un sur ce forum !</strong></dt>
+					<p>Nous en sommes désolés. Le formulaire d’envoi de courriels de ce forum possède des protections afin d’essayer de repérer les utilisateurs qui envoient de tels messages. Vous devriez envoyer par courriel à un administrateur du forum une copie complète du courriel que vous avez reçu. Il est très important d’y inclure les en-têtes contenant des informations sur l’auteur du courriel. Il pourra alors agir en conséquence.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>PCU : Amis et ignorés</h3>
+			
+				<dl class="faq">
+					<dt id="f6r0"><strong>À quoi sert ma liste d’amis et d’ignorés ?</strong></dt>
+					<p>Vous pouvez utiliser ces listes afin d’organiser et trier les utilisateurs du forum. Les membres ajoutés dans votre liste d’amis seront listés dans votre panneau de contrôle de l’utilisateur afin de consulter rapidement leur statut en ligne et leur envoyer des messages privés. Selon le template utilisé, les messages publiés par ces utilisateurs peuvent éventuellement être mis en surbrillance. Si vous ajoutez un utilisateur dans votre liste d’ignorés, tous les messages qu’il publiera seront masqués par défaut.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f6r1"><strong>Comment puis-je ajouter ou supprimer des utilisateurs de ma liste d’amis et d’ignorés ?</strong></dt>
+					<p>Vous pouvez ajouter des utilisateurs à ces listes de deux manières. Dans chaque profil d’utilisateurs, un lien vous permet de les ajouter à votre liste d’amis ou d’ignorés. Alternativement, vous pouvez ajouter directement des utilisateurs depuis le panneau de contrôle de l’utilisateur en saisissant leur nom d’utilisateur. Vous pouvez également les supprimer de vos listes en utilisant cette même page.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Recherche dans les forums</h3>
+			
+				<dl class="faq">
+					<dt id="f7r0"><strong>Comment puis-je effectuer une recherche dans un ou des forums ?</strong></dt>
+					<p>Saisissez un terme dans la boîte de recherche située sur l’index, les pages des forums ou les pages des sujets. La recherche avancée est accessible en cliquant sur le lien « Recherche avancée » disponible sur toutes les pages du forum. L’accès à la recherche dépend du style utilisé.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f7r1"><strong>Pourquoi ma recherche ne renvoie aucun résultat ?</strong></dt>
+					<p>Votre recherche était probablement trop vague ou incluait trop de termes communs qui ne sont pas indexés par phpBB3. Soyez plus précis et utilisez les options disponibles dans la recherche avancée.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f7r2"><strong>Pourquoi ma recherche renvoie à une page blanche ?!</strong></dt>
+					<p>Votre recherche a renvoyé trop de résultats pour que le serveur puisse les afficher. Utilisez la recherche avancée et soyez plus précis dans les termes utilisés et dans la sélection des forums dans lesquels vous souhaitez effectuer une recherche.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f7r3"><strong>Comment puis-je rechercher des utilisateurs ?</strong></dt>
+					<p>Rendez-vous sur la page « Membres » et cliquez sur le lien « Trouver un membre ».</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f7r4"><strong>Comment puis-je retrouver mes propres messages et sujets ?</strong></dt>
+					<p>Vos propres messages peuvent être affichés en cliquant sur le lien « Rechercher les messages de l’utilisateur » par l’intermédiaire du panneau de contrôle de l’utilisateur ou sur la page de votre propre profil. Pour effectuer une recherche de vos propres sujets, utilisez la recherche avancée et remplissez convenablement les options qui vous sont disponibles.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Signets et abonnements aux sujets</h3>
+			
+				<dl class="faq">
+					<dt id="f8r0"><strong>Quelle est la différence entre le signetage et l’abonnement ?</strong></dt>
+					<p>Dans phpBB3, le signetage d’un sujet est similaire à ajouter une page aux favoris de votre navigateur internet. Vous ne recevrez pas de notification lors de la publication d’un nouveau message, mais vous pourrez retourner rapidement au sujet ultérieurement. Cependant, l’abonnement vous préviendra lors de la publication de nouveaux messages sur le sujet ou le forum que vous surveillez.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f8r1"><strong>Comment puis-je m’abonner à un forum ou à un sujet spécifique ?</strong></dt>
+					<p>Pour s’abonner à un forum spécifique, cliquez sur le lien « S’abonner au forum » disponible dans le forum souhaité. Pour s’abonner à un sujet, répondez au sujet en sélectionnant l’option d’abonnement spécifique ou cliquez sur le lien « S’abonner au sujet » disponible sur la page du sujet.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f8r2"><strong>Comment puis-je résilier mes abonnements ?</strong></dt>
+					<p>Pour résilier vos abonnements, rendez-vous sur le panneau de contrôle de l’utilisateur et suivez le lien vers vos abonnements.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Forum : Pièces jointes</h3>
+			
+				<dl class="faq">
+					<dt id="f9r0"><strong>Quelles pièces jointes sont autorisées sur ce forum ?</strong></dt>
+					<p>Chaque administrateur du forum peut autoriser ou interdire certains types de pièces jointes. Si vous n’êtes pas certain(e) de ce qui est autorisé ou non, n’hésitez pas à demander assistance à un administrateur du forum.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f9r1"><strong>Comment puis-je retrouver toutes mes pièces jointes ?</strong></dt>
+					<p>Pour retrouver la liste des pièces jointes que vous avez transférées, rendez-vous sur le panneau de contrôle de l’utilisateur et suivez les liens vers la section des pièces jointes.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Site Web : À propos de phpBB3</h3>
+			
+				<dl class="faq">
+					<dt id="f10r0"><strong>Qui a développé ce logiciel de forum ?</strong></dt>
+					<p>Ce programme (Dans sa forme non modifiée) est produit et distribué par le <a href="https://www.phpbb.com/" target="_blank" rel="noopener">phpBB Group</a>, qui en est le légitime propriétaire. Il est rendu accessible sous la Licence Publique Générale GNU et peut être distribué gratuitement. Pour plus d’informations, veuillez cliquer sur le lien.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f10r1"><strong>Qui dois-je contacter à propos de problèmes d’abus ou d’ordres légaux liés à ce forum ?</strong></dt>
+					<p>Tous les administrateurs listés sur la page « Membres du Conseil » devraient être un contact approprié pour ces genres de problèmes. Si vous n’obtenez aucune réponse de leur part, vous devriez alors contacter le propriétaire du domaine (faites une <a href="https://www.qwant.com/?q=whois" target="_blank" rel="noopener">requête WHOIS</a>) ou, si celui-ci fonctionne sur un service gratuit (comme Yahoo!, Free.fr, f2s.com, etc.), le service de gestion des abus. Veuillez notez que le phpBB Group n’a <strong>absolument aucune juridiction</strong> et ne peut en aucun cas être tenu comme responsable de comment, où et par qui ce forum est utilisé. Ne contactez pas le phpBB Group pour tout problème d’ordre légal (commentaire incessant, insultant, diffamatoire, etc.) qui n’ont <strong>pas directement de relation</strong> avec le site internet de phpBB.com ou le script phpBB en lui-même. Si vous envoyez un courriel au phpBB Group <strong>à propos d’une utilisation de tierce partie</strong> de ce logiciel, attendez-vous à une réponse laconique, ou à aucune réponse, tout simplement.</p>
+					<p><a href="faq.php.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.012s | 5 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Consulter le sujet : PROJET SERGONA (Monde RP Créatif) : Topic des Infos" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Projets en jeu gérés par les Administrateurs, permettant aux participants d'être en mode créatif." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Consulter le sujet : PROJET SERGONA (Monde RP Créatif) : Topic des Infos" />
+<meta property="og:url" content="https://eaglecraft.fr/viewtopic.php?f=59&amp;t=569" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Projets en jeu gérés par les Administrateurs, permettant aux participants d'être en mode créatif." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="viewtopic.php@f=59&amp;t=569.html" />
+
+<title>EagleCraft - Consulter le sujet : PROJET SERGONA (Monde RP Créatif) : Topic des Infos</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-viewtopic">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="viewtopic.php@f=59&amp;t=569.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1 style="font-size: 16px;">Consulter le sujet : PROJET SERGONA (Monde RP Créatif) : Topic des Infos</h1>
+			
+		</div><div itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span style="display: none;" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="forum.php.html" accesskey="h" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/forum.php">
+					<span itemprop="name">Forums</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=6.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=6">
+					<span itemprop="name">Univers du serveur Minecraft</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=59.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=59">
+					<span itemprop="name">Projets Créatifs</span>
+				</a>
+				<meta itemprop="position" content="4" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<span>
+					<span itemprop="name">PROJET SERGONA (Monde RP Créatif) : Topic des Infos</span>
+				</span>
+				<meta itemprop="position" content="5" />
+			</span>
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<!--
+			Style a la con du chaos cause par Discord
+		-->
+		<style type="text/css">
+		@media screen and (min-width:749px) {
+			#message-box {
+				width: 98%;
+			}
+		}
+		</style>
+
+		<!--
+			NOTE: Supprimer style="display: none !important;" pour afficher la description du forum
+		-->
+		<div style="display: none !important;">Projets en jeu gérés par les Administrateurs, permettant aux participants d'être en mode créatif.<br /></div>
+
+		<div class="topic-actions">
+			<div class="buttons">
+			
+			</div>
+
+			
+			<div class="pagination">
+				2 messages
+				<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div>Page <strong>1</strong> sur <strong>1</strong>
+			</div>
+			
+		</div>
+
+		<div class="clear"></div>
+
+		<br />
+
+		
+		<div class="vtouter" id="p1355">
+			<div class="vtinner">
+				<div class="vtdatebar">
+					<div class="floatleft">
+						<h3 class="vtsubject mp user-offline"><a href="viewtopic.php@f=59&amp;t=569.html#p1355" class="tablet">PROJET SERGONA (Monde RP Créatif) : Topic des Infos</a></h3>
+					</div>
+					<div class="floatright">
+						<span class="vtdate"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " /> Jeu 14 Nov 2019, 16:43</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="vtprofilepanel phones" style="padding: 9px;">
+					<h3 class="vtsubject mp" style="padding: 0; height: auto;"><a href="viewtopic.php@f=59&amp;t=569.html#p1355">PROJET SERGONA (Monde RP Créatif) : Topic des Infos</a></h3>
+				</div>
+
+				<div class="vtprofilepanel">
+					<div style="text-align: center;">
+						<span class="vtusername"><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></span>
+						<img src="download/file.php@avatar=2_1594032706.gif" width="105" height="105" alt="Avatar de l’utilisateur" /><br /><span class="ranktitle">Président(e) du Conseil</span>
+					</div>
+					<br />
+					<div class="vtprofileinfo">
+						<strong>Messages :</strong> 175<br /><strong>Localisation :</strong> En train de lire par dessus ton épaule !<br />
+					</div>
+				</div>
+
+				<div class="vtcontent">
+
+					<div class="vtcontrolbuttons">
+						
+					</div>
+
+					<div class="clear"></div>
+
+					
+
+					<div id="textwithlists" class="content" id="postdiv1355"><span style="font-weight: bold">Bonjour à toutes et tous !</span><br /><br />Sergona est un projet de monde créatif, où le but est de construire de manière roleplay, comme sur World of Design et World of Eagle. Sauf qu'ici, vous avez accès au créatif !<br /><br /><br /><span style="font-size: 150%; line-height: 116%;">Présentation du Projet</span><br /><br /><span style="font-weight: bold">L'objectif de cette map est de créer un monde roleplays de faire des constructions roleplays, comme des villes, des villages, des maisons, des ports, des navires... Etc...</span> <br /><br />Dans le but d'avoir un monde le plus RP possible, il est important de définit une cohérence globale :<br /><ul style="margin-left: 1em;"><li>Cohérence temporelle : Il est interdit de faire des constructions de style industriel, moderne ou futuristique.</li><li>De plus, il est demandé de faire attention à la cohérence spatiale.</li></ul><br />Ce monde est un Projet Créatif, et non un monde secondaire. Ainsi, n'importe qui peut y accéder, mais pour participer au projet, vous devez demander à un Administrateur !<br />Par défaut, n'importe qui au dessus de Maire peut construire sur ce monde, mais demandez quand même avant !<br />Si vous êtes Citoyen ou Villageois, vous devez être ajouté au cuboïde.<br /><span style="font-size: 50%; line-height: 116%;">Note pour nous : La région se nomme &quot;general&quot;, et il faut donc faire la commande : /region addmember general &lt;Nom du joueur&gt;</span><br /><br />La map utilisée a été créée par moi avec le logiciel <a href="https://www.worldpainter.net/" class="postlink" target="_blank" rel="noopener">World Painter</a>. &lt;3<br /><br /><br /><span style="font-size: 150%; line-height: 116%;">Permissions supplémentaires sur ce monde, dont l'accès à WorldEdit (Maire Minimum)</span><br /><br /><span style="font-weight: bold">Si vous êtes Citoyen ou plus</span>, vous avec accès à certaines fonctionnalités de WorldEdit, elle est pas belle la vie ? <img src="images/smilies/icon_e_biggrin.gif" alt=":D" title="Heureux" /><br />Pour vous aider à démarrer avec ce plugin, voici le détail de commandes auxquelles vous avez accès :<br /><ul style="margin-left: 1em;"><li>Sélectionner une région avec la hache en bois. <span style="font-weight: bold">Ne faites pas des sélections trop grandes !</span> Pour l'activer, faites : //wand</li><li>Remplacer un type de bloc par un autre dans cette sélection : //replace &lt;Type d'origine&gt; &lt;Type de remplacement&gt;</li><li>Remplir cette sélection par un type de bloc : //set &lt;Type&gt;</li><li>Déplacer la sélectionner : //move</li><li>Dupliquer devant vous la sélection : //stack &lt;Nombre de fois&gt;</li><li>Copier la sélection depuis votre position : //copy</li><li>Coller la sélection depuis votre position : //paste</li><li>Coller en ignorant l'air (Vachement pratique) : //paste -a</li><li>Faire tourner votre copie autour de votre position de copie dans le plan du monde : //rotate &lt;Rotation en degrés&gt;</li><li>Faire tourner votre copie autour de votre position de copie : //rotate &lt;Rotation selon l'axe X&gt; &lt;Rotation selon l'axe Y&gt; &lt;Rotation selon l'axe Z&gt;</li><li>Miroir de votre copie selon l'axe que vous regardez : //flip</li><li>Annuler votre dernière opération : //undo</li><li>Rétablir : //redo</li><li>Générer un cylindre : //cyl &lt;Rayon&gt; &lt;Hauteur&gt;</li><li>Générer un cylindre creux : //hcyl &lt;Rayon&gt; &lt;Hauteur&gt;</li><li>Générer une sphère : //sphere &lt;Rayon&gt;</li><li>Générer une sphère creuse : //hsphere &lt;Rayon&gt;</li><li>Brushs : <a href="https://worldedit.enginehub.org/en/latest/usage/tools/brushes/" class="postlink" target="_blank" rel="noopener">https://worldedit.enginehub.org/en/latest/usage/tools/brushes/</a></li><li>Masks pour les brushs : <a href="https://worldedit.enginehub.org/en/latest/usage/general/masks/" class="postlink" target="_blank" rel="noopener">https://worldedit.enginehub.org/en/latest/usage/general/masks/</a></li></ul><br />Les commandes //rotate et //flip sont compliquées à comprendre lorsqu'on ne les a jamais utilisées ! Il est vivement recommandé de les tester sur de petits volumes pour bien les comprendre.<br /><br />N'utilisez pas WorldEdit si vous ne savez pas l'utiliser ! Un grand pouvoir implique de grandes responsabilités, et nous vous rappelons que toutes vos actions sur des blocs sont enregistrés, mêmes celles avec WorldEdit.<br /><br />Dans tous les cas, des limites sont fixées aux opérations WorldEdit. Ça ne sert donc à rien de faire un <span style="font-style: italic">//set 0</span> sur l'ensemble du monde.<br />Comme sur le rester du serveur, dégrader les constructions des autres (Sauf sur WOW et WON) et/ou le paysage (Sauf sur WOM) est passible d'un bannissement.<br />Après, le terraforming propre, c'est okay. Mais si c'est du gros terraforming, prévenez nous ! ^^<br /><br />Vous avez aussi accès à la commande de modification de votre vitesse : /speed &lt;Accélération&gt;<br /><br /><br /><span style="font-size: 150%; line-height: 116%;">État Actuel</span><br /><br />Actuellement, au 14 novembre 2019, cette carte sur le <a href="../cartes.eaglecraft.fr/index.html@worldname=sergona&amp;mapname=sergona&amp;zoom=1.html" class="postlink" target="_blank" rel="noopener">Dynmap D'EagleCraft</a> ressemble à l'image qui suit... Il n'y a à ce moment là aucune construction. En effet, elle sort fraichement de l'exportation World Painter.<br /><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=279" alt="Sergona sur Dynmap.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=279&amp;mode=view" target="_blank" rel="noopener">Sergona sur Dynmap.jpg</a> (314.72 Kio) Consulté 1367 fois</dd>
+						</dl>
+						</div><br />Voilààà !<br /><br /><span style="font-weight: bold">Bon jeu !</span><br /><br /><br /><span style="font-weight: bold">PS :</span> Si vous avez besoin d'arbres, faites des copiés-collés de ceux présents sur la map ! <img src="images/smilies/icon_e_wink.gif" alt=";)" title="Clin d’œil" /> Ça permet une certaine uniformité. ^^</div>
+
+					<div id="sig1355" class="signature"><span style="font-size: 150%; line-height: 116%;">Sailoriae</span>, admin système et dév d'EagleCraft.</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<br />
+		
+		<div class="vtouter" id="p1356">
+			<div class="vtinner">
+				<div class="vtdatebar">
+					<div class="floatleft">
+						<h3 class="vtsubject mp user-offline"><a href="viewtopic.php@f=59&amp;t=569.html#p1356" class="tablet">Screenshots des paysages, novembre 2019</a></h3>
+					</div>
+					<div class="floatright">
+						<span class="vtdate"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " /> Sam 16 Nov 2019, 23:41</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="vtprofilepanel phones" style="padding: 9px;">
+					<h3 class="vtsubject mp" style="padding: 0; height: auto;"><a href="viewtopic.php@f=59&amp;t=569.html#p1356">Screenshots des paysages, novembre 2019</a></h3>
+				</div>
+
+				<div class="vtprofilepanel">
+					<div style="text-align: center;">
+						<span class="vtusername"><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></span>
+						<img src="download/file.php@avatar=2_1594032706.gif" width="105" height="105" alt="Avatar de l’utilisateur" /><br /><span class="ranktitle">Président(e) du Conseil</span>
+					</div>
+					<br />
+					<div class="vtprofileinfo">
+						<strong>Messages :</strong> 175<br /><strong>Localisation :</strong> En train de lire par dessus ton épaule !<br />
+					</div>
+				</div>
+
+				<div class="vtcontent">
+
+					<div class="vtcontrolbuttons">
+						
+					</div>
+
+					<div class="clear"></div>
+
+					
+
+					<div id="textwithlists" class="content" id="postdiv1356">Le shaderpack utilisé est le très célèbre <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1293898-1-14-chocapic13s-shaders" class="postlink" target="_blank" rel="noopener">Chocapic13's Shaders</a>.<br /><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=288" alt="1 - Cascade île centrale.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=288&amp;mode=view" target="_blank" rel="noopener">1 - Cascade île centrale.jpg</a> (761.17 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=289" alt="2 - Ravin île centrale.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=289&amp;mode=view" target="_blank" rel="noopener">2 - Ravin île centrale.jpg</a> (617.58 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=290" alt="3 - Île centrale.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=290&amp;mode=view" target="_blank" rel="noopener">3 - Île centrale.jpg</a> (608.68 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=291" alt="4 - Grande arche.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=291&amp;mode=view" target="_blank" rel="noopener">4 - Grande arche.jpg</a> (494.92 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=292" alt="5 - Cascade seconde île centrale.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=292&amp;mode=view" target="_blank" rel="noopener">5 - Cascade seconde île centrale.jpg</a> (787.34 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=293" alt="6 - Rivière seconde île centrale.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=293&amp;mode=view" target="_blank" rel="noopener">6 - Rivière seconde île centrale.jpg</a> (789.03 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=294" alt="7 - Oeuil sud.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=294&amp;mode=view" target="_blank" rel="noopener">7 - Oeuil sud.jpg</a> (400.04 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div><br /><div class="inline-attachment">
+						<dl class="file">
+							<dt class="attach-image"><img src="download/file.php@id=295" alt="8 - Mer sud.jpg" onclick="viewableArea(this);" /></dt>
+							
+							<dd><a href="download/file.php@id=295&amp;mode=view" target="_blank" rel="noopener">8 - Mer sud.jpg</a> (343.76 Kio) Consulté 1349 fois</dd>
+						</dl>
+						</div></div>
+
+					<div id="sig1356" class="signature"><span style="font-size: 150%; line-height: 116%;">Sailoriae</span>, admin système et dév d'EagleCraft.</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<br />
+		
+		<form id="viewtopic" method="post" action="viewtopic.php@f=59&amp;t=569.html">
+
+		<fieldset class="display-options" style="margin-top: 0; ">
+			
+		</fieldset>
+
+		</form>
+		<hr />
+		
+
+		<div class="topic-actions">
+			<div class="buttons">
+			
+			</div>
+
+			<div class="pagination">
+				2 messages
+				<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div>Page <strong>1</strong> sur <strong>1</strong>
+			</div>
+
+		</div>
+
+		<p></p><p><a href="viewforum.php@f=59.html" class="left-box tablet left" accesskey="r">Retour vers  Projets Créatifs</a></p>
+		
+		<div class="clear"></div>
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.018s | 14 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

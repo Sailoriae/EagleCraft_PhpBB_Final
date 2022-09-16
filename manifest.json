@@ -1,0 +1,25 @@
+{
+	"name": "EagleCraft",
+	"short_name": "EagleCraft",
+	"icons": [
+		{
+			"src": "./images/app/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./images/app/android-chrome-256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "./images/app/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#212a6c",
+	"background_color": "#003b62",
+	"display": "standalone",
+	"start_url": "."
+}

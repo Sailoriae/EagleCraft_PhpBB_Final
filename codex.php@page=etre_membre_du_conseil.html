@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Codex : Etre Membre du Conseil" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Codex : Etre Membre du Conseil" />
+<meta property="og:url" content="https://eaglecraft.fr/codex.php?page=etre_membre_du_conseil" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="codex.php@page=etre_membre_du_conseil.html" />
+
+<title>EagleCraft - Codex : Etre Membre du Conseil</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-codex">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="codex.php@page=etre_membre_du_conseil.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Codex : Etre Membre du Conseil</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div style="display: none;" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="codex.php@page=accueil.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/codex.php&page=accueil">
+					<span itemprop="name">Codex</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			
+		</div>
+
+		<!--
+			Style a la con du chaos causé par Discord
+		-->
+		<style type="text/css">
+		/* PROPRETE */
+		.panel {
+			text-align: justify;
+		}
+		.cp-list li h3 {
+			margin-top: 5px;
+		}
+		ul.cp-list li a span img {
+			vertical-align: middle;
+			margin-top: -4px;
+			margin-right: 4px;
+		}
+
+		/* LISIBILITE */
+		.text-shadow {
+			text-shadow: 1px 1px 1px #000;
+		}
+		</style>
+
+		<div class="right-column float-right">
+		<div id="navigation" style="padding-top: 5px;">
+			<ul class="cp-list">
+				<li><a href="codex.php@page=accueil.html"><span><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" /> Accueil</span></a></li>
+				<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><span><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" /> Guide des Nouveaux Joueurs</span></a></li>
+				<li><h3><b>Guides</b></h3></li>
+				<li><a href="codex.php@page=mondes.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" /> Mondes</span></a></li>
+				<li><a href="codex.php@page=constructions_et_habitations.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" /> Constructions &amp; Habitations</span></a></li>
+				<li><a href="codex.php@page=commercer.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" /> Commercer</span></a></li>
+				<li><a href="codex.php@page=guides_divers.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" /> Guides Divers</span></a></li>
+				<li><a href="codex.php@page=grades.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" /> Grades</span></a></li>
+				<li><h3><b>Guides Spécifiques</b></h3></li>
+				<li><a href="codex.php@page=etre_responsable_de_projet.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" /> Etre Responsable de Projet</span></a></li>
+				<li id="active-subsection"><a href="codex.php@page=etre_membre_du_conseil.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" /> Etre Membre du Conseil</span></a></li>
+				<li><h3><b>Règles</b></h3></li>
+				<li><a href="codex.php@page=regles_generales.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" /> Règles Générales</span></a></li>
+				<li><a href="codex.php@page=echelle_des_infractions.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" /> Echelle des Infractions</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+
+		<div class="left-column float-left">
+		<div class="panel bg1">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+
+					<p>Vous êtes un Membre du Conseil quand vous appartenez au <a href="codex.php@page=etre_membre_du_conseil.html">Conseil d'EagleCraft</a> (Appelé aussi «&nbsp;Staff&nbsp;»), l'organisation administrative, où vous pouvez être <font class="text-shadow" color="#FFAA00">Noble Plus</font>, ou <font class="text-shadow" color="#AA00AA">Modérateur</font>, voir <font class="text-shadow" color="0000AA">Modérateur-Suprême</font> dans de rares cas. Les <font class="text-shadow" color="#AA0000">Administrateurs</font> appartiennent aussi à cette organisation en tant que Présidents.</p>
+					<p>Ce titre est un échange contre des services que vous rendez à la communauté. Les <font class="text-shadow" color="#AA0000">Administrateurs</font> vous le donnent quand il jugent qu'ils ont confiance en vous et que vous êtes apte à la tâche. Les critières généraux sont les suivants : Etre apprécié de la communauté, être stable et avoir une certaine maturité.</p>
+					<!--<p>Ainsi, un Membre du Conseil est nommé lorsque que les <font class="text-shadow" color="#AA0000">Administrateurs</font> auront jugés qu'il a fait ses preuves.</p>-->
+
+					<br/>
+
+					<h3>Devoirs</h3>
+					<p>En tant que Membre du Conseil, vous avez plusieurs fonctions générales au sein du serveur, répertoriées ici, mais aussi des fonction individuelles. Ces dernières sont répertoriées sur le <a href="forum.php.html">Forum</a> dans les «&nbsp;Annexes du Codex&nbsp;». Par exemple, des gestions de forums ou de validations candidatures peuvent vous être attribuées.</p>
+
+					<h4>Général</h4>
+					<p>En tant que Membre du Conseil, vous devez faire appliquer le Codex à l'ensemble d'EagleCraft, ainsi que protéger les joueurs et les aider. Pour cela, vous devez donc rester informé des éventuelles violation des règles, inscrites sur la page <a href="codex.php@page=echelle_des_infractions.html">Echelle des Infractions</a>. Pour qu'une infraction soit découverte, il est possible que :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Les joueurs la trouvent eux même et portent plainte sur le <a href="forum.php.html">Forum</a>, dans «&nbsp;Plaintes&nbsp;», ou vous contactent directement par le tchat de Minecraft.<p>
+						</li>
+						<li>
+						<p>Vous découvrez vous-même une infraction au Codex lors de votre passage sur le Forum ou de votre jeu sur le serveur Minecraft.<p>
+						</li>
+					</ul>
+					<p>Souvenez-vous que l'ambiance du serveur doit être chaleureuse, dans un esprit «&nbsp;entre amis&nbsp;». Si vous avez été choisi pour être Membre du Conseil, c'est que vous êtes apprécié par la communauté. Vous devez donc le rester. Un Membre du Conseil ne doit en aucun cas faire peur aux joueurs, bien au contraire. Votre pouvoir de bannissement ne doit être utilisé que pour protéger les autres joueurs d'une personne irrespectueuse.</p>
+	
+					<h4>Historiques des blocs</h4>
+					<p>Pour connaître l'historique d'un emplacement de blocs (Aux coordonnées X Y Z), vous devez commencer par prendre l'outil qui vous révèle l'historique grâce à la commande : <i>/grief</i></p>
+					<p>Puis faites un <b>Clique droit</b> à l'emplacement concerné. Les informations s'affichent alors dans le tchat.<p>
+					<p>Les zones protégées par les Villes vous sont accessibles librement. Vous êtes donc en mesure de rendre une partie ou la totalité des items volés et de réparer les éventuels dégats.</p>
+
+					<h4>Bannissements temporaire</h4>
+					<p>Après avoir identifié un comportement abusif d'un joueur, répertoriés dans l'<a href="codex.php@page=echelle_des_infractions.html">Echelle des Infractions</a>, vous pouvez prendre la décision de le bannir temporairement (Le joueur sera débanni automatiquement à la fin du temps que vous renseignez) : <i>/tempban &lt;Joueur&gt; &lt;Temps(Mois Jours Heures Minutes)&gt; &lt;Raison(s)&gt;</i></p>
+					<p><u>Exemple :</u> Vous voulez bannir Jean-Kevin pendant 1 an, 2 mois, 3 jours, 4 heures, 5 minutes pour avoir griefé du diamant en masse : <i>/tempban Jean-Kevin 1y 2mo 3d 4h 5m Griefs de diamants</i></p>  
+					<p>Notez que vous ne devez pas abuser de cette commande. <b>Le mot d'ordre général est d'être souple et de laisser une seconde chance aux joueurs.</b> Si vous hésitez entre deux niveaux de l'<a href="codex.php@page=echelle_des_infractions.html">Echelle des Infractions</a>, prenez toujours le plus bas. La seule exception est si le joueur vient d'arriver, et qu'il a des intention négatives. Dans ce cas, vous pouvez donner un bannissement définitif immédiatement.</p>
+
+					<h4>Bannissements définitif</h4>
+					<p>Bannir définitivement un joueur est une décision importante, vous devez avant cela bien vérifier votre acte dans la page <a href="codex.php@page=echelle_des_infractions.html">Echelle des Infractions</a> et en parler aux <font class="text-shadow" color="#AA0000">Administrateurs</font>. Après avoir bien vérifié que vous êtes en droit de pouvoir bannir définitivement ce joueur, vous pouvez exécuter la commande : <i>/ban &lt;Joueur&gt; &lt;Raison(s)&gt;</i></p>
+					<p>Il peut être nécéssaire de bannir aussi son adresse IP, pour ne pas qu'il se reconnecte sur un autre compte : <i>/banip &lt;Pseudonyme ou IP du Joueur&gt;</i></p>
+
+					<h4>Débannir</h4>
+					<p>Vous pouvez débannir un joueur banni temporairement ou définitivement si sa peine est jugée trop longue ou terminée, ou bien encore si il s'est excusé sur le Forum. Il est important d'exercer ce droit en tant que Membre du Conseil et non en tant qu'ami du joueur concerné si vous connaissez celui-ci. Vous pouvez alors :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Débannir un joueur : <i>/unban &lt;Pseudonyme du joueur bannis&gt;</i></p>
+						</li>
+						<li>
+						<p>Débannir une adresse IP : <i>/unbanip &lt;Pseudonyme ou IP du joueur bannis&gt;</i></p>
+						</li>
+					</ul>
+
+					<h4>Forum</h4>
+					<p>Un Membre du Conseil doit souvent vérifier le <a href="forum.php.html">Forum</a> pour pouvoir traiter toutes les plaintes, les prouver et appliquer le Codex. Il ne doit en aucun cas croire un joueur sans preuve ou sans avoir vérifié les historiques (Voir ci-dessus).</p>
+
+					<br/>
+
+					<h3>Droits</h3>
+					<p>En tant que Membre du Conseil, vous disposez aussi de plusieurs droits :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Supprimer des commerces illégaux (Ne pas abuser de cette fonction) : <i>/commerce supprimer</i></p>
+						</li>
+						<li>
+						<p>Accèder aux coffres cuboïdés et détruire leur panneau de sécurité.</p>
+						</li>
+						<li>
+						<p>Vous téléporter à un joueur (Indisponible sur <font class="text-shadow" color="#FFFF55">World of Fun</font>, <font class="text-shadow" color="#FF55FF">Equestria</font> et <font class="text-shadow" color="#55FFFF">Plaines</font>) : <i>/tp &lt;Pseudonyme du joueur à téléporter&gt; &lt;Pseudonyme du joueur ou il se téléporte&gt;</i></p>
+						</li>
+						<li>
+						<p>Vous téléporter à une coordonnée : <i>/tppos &lt;X&gt; &lt;Y&gt; &lt;Z&gt; (&lt;Yaw&gt;) (&lt;Pitch&gt;)</i></p>
+						</li>
+						<li>
+						<p>Voir les informations sur un joueur : <i>/whois &lt;Pseudonyme&gt;</i></p>
+						</li>
+						<li>
+						<p>Voir l'inventaire d'un joueur : <i>/invsee &lt;Pseudonyme&gt;</i></p>
+						</li>
+						<li>
+						<p>Voir les résidences d'un autre joueur : <i>/home &lt;Pseudonyme&gt;:</i></p>
+						</li>
+						<li>
+						<p>Accéder à une résidence d'un autre joueur : <i>/home &lt;Pseudonyme&gt;:&lt;Nom de la Résidence&gt;</i></p>
+						</li>
+					</ul>
+					<p><b>Attention :</b> Il est indéniable que ces droits vous confèrent de nombreux avantages. Ainsi, les utiliser est déconseillé pour vos constructions, et strictement interdit pour le jeu avec d'autres joueurs. C'est à dire qu'il est interdit de donner des ressources du mode créatif à d'autres joueurs, ou d'utiliser vos avantages lors d'affrontements PvP.</p>
+
+					<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		</div>
+
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.008s | 8 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

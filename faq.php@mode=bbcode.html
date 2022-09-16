@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Guide du BBCode" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition)." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Guide du BBCode" />
+
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition)." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+
+
+<title>EagleCraft - Guide du BBCode</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-faq">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="faq.php@mode=bbcode.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Guide du BBCode</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div class="panel bg1" id="faqlinks">
+			<div class="inner"><span class="corners-top"><span></span></span>
+				<div class="column1">
+				
+					<dl class="faq">
+						<dt><strong>Introduction</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f0r0">Qu’est-ce que le BBCode ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Mise en forme du texte</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f1r0">Comment puis-je mettre du texte en gras, en italique et en souligné ?</a></dd>
+						<dd><a href="faq.php@mode=bbcode.html#f1r1">Comment puis-je modifier la taille ou la couleur du texte ?</a></dd>
+						<dd><a href="faq.php@mode=bbcode.html#f1r2">Puis-je combiner des balises de mise en forme ?</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Citation et données de largeur fixe</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f2r0">Citation de texte dans les réponses</a></dd>
+						<dd><a href="faq.php@mode=bbcode.html#f2r1">Mise en forme de codes ou de données de largeur fixe</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Genèse de listes</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f3r0">Création d’une liste non-ordonnée</a></dd>
+						<dd><a href="faq.php@mode=bbcode.html#f3r1">Création d’une liste ordonnée</a></dd>
+						
+					</dl>
+				
+				</div>
+
+				<div class="column2">
+				
+					<dl class="faq">
+						<dt><strong>Création de liens</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f4r0">Insérer un lien vers un site quelconque</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Affichage d’images dans les messages</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f5r0">Ajout d’une image dans un message</a></dd>
+						<dd><a href="faq.php@mode=bbcode.html#f5r1">Ajout de pièces jointes dans un message</a></dd>
+						
+					</dl>
+				
+					<dl class="faq">
+						<dt><strong>Divers</strong></dt>
+						<dd><a href="faq.php@mode=bbcode.html#f6r0">Puis-je ajouter mes propres balises ?</a></dd>
+						
+					</dl>
+				
+				</div>
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="clear"></div>
+
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Introduction</h3>
+			
+				<dl class="faq">
+					<dt id="f0r0"><strong>Qu’est-ce que le BBCode ?</strong></dt>
+					<p>Le BBCode est une implémentation spéciale de l’HTML. Vous pouvez insérer du BBCode dans vos messages sur le forum sous réserve que cette fonctionnalité ait été autorisée par un administrateur. De plus, vous pouvez désactiver le BBCode sur chacun de vos messages par l’intermédiaire du formulaire de rédaction. Le BBCode est similaire à l’architecture de l’HTML, les balises sont contenues entre des crochets [ et ] à la place de &lt; et &gt;, et il offre un meilleur contrôle sur la mise en forme. Selon le template que vous utilisez, vous pouvez trouver et insérer très facilement du BBCode dans vos messages par l’intermédiaire d’une interface cliquable située juste au-dessus du formulaire de rédaction. Si ces brèves explications ne vous conviennent pas, vous pouvez consulter le guide suivant qui s’avère très explicite.</p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Mise en forme du texte</h3>
+			
+				<dl class="faq">
+					<dt id="f1r0"><strong>Comment puis-je mettre du texte en gras, en italique et en souligné ?</strong></dt>
+					<p>Le BBCode inclut des balises qui vous permettent de modifier rapidement le style de votre texte brut. Ceci peut être réalisé grâce aux méthodes suivantes : <ul style="margin-left: 1em;"><li><p>Pour mettre une partie d’un texte en gras, il faut l’enfermer entre les balises <strong>[b][/b]</strong>. Par exemple :<br /><br /><strong>[b]</strong>Salut<strong>[/b]</strong><br /><br />Deviendra : <strong>Salut</strong></p></li><li><p>Pour souligner une partie d’un texte, utilisez les balises <strong>[u][/u]</strong>. Par exemple :<br /><br /><strong>[u]</strong>Bonjour<strong>[/u]</strong><br /><br />Deviendra : <span style="text-decoration: underline">Bonjour</span></p></li><li><p>Pour mettre une partie d’un texte en italique, utilisez les balises <strong>[i][/i]</strong>. Par exemple :<br /><br />C’est <strong>[i]</strong>super !<strong>[/i]</strong><br /><br />Deviendra : C’est <i>super !</i></p></li></ul></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r1"><strong>Comment puis-je modifier la taille ou la couleur du texte ?</strong></dt>
+					<p>Pour modifier la taille ou la couleur du texte, vous pourrez utiliser les balises suivantes. Cependant, gardez à l’esprit que le rendu visuel final dépendra également du navigateur internet et du système d’exploitation de l’utilisateur : <ul style="margin-left: 1em;"><li><p>Pour insérer une couleur sur une partie d’un texte, il faut l’enfermer entre les balises <strong>[color=][/color]</strong>. Vous pouvez saisir le nom d’une couleur reconnue, comme par exemple red, blue ou yellow, ou saisir directement son code hexadécimal, comme #FFFFFF ou #000000. Par exemple, pour mettre une partie d’un texte en rouge, vous pouvez utiliser :<br /><br /><strong>[color=red]</strong>Salut !<strong>[/color]</strong><br /><br />Ou encore :<br /><br /><strong>[color=#FF0000]</strong>Salut !<strong>[/color]</strong><br /><br />Ce qui, dans les deux cas, deviendra : <span style="color:red">Salut !</span></p></li><li><p>Pour modifier la taille de la police de caractères d’une partie d’un texte, utilisez les balises <strong>[size=][/size]</strong>. es balises dépendent du style que l’utilisateur a sélectionné, mais le format recommandé est une valeur numérique représentant la taille du texte en pourcentage, commençant de 50 (minuscule) et allant jusqu’à 200 (énorme). Par exemple :<br /><br /><strong>[size=30]</strong>MINUSCULE<strong>[/size]</strong><br /><br />Deviendra : <span style="font-size:30%;">MINUSCULE</span><br /><br />Alors que :<br /><br /><strong>[size=200]</strong>ÉNORME !<strong>[/size]</strong><br /><br />Deviendra : <span style="font-size:200%;">ÉNORME !</span></p></li></ul></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f1r2"><strong>Puis-je combiner des balises de mise en forme ?</strong></dt>
+					<p>Bien sûr ! Par exemple, pour obtenir l’attention de tout le monde, vous pouvez écrire :<br /><br /><strong>[size=200][color=red][b]</strong>REGARDEZ-MOI !<strong>[/b][/color][/size]</strong><br /><br />Ce qui deviendra : <span style="color:red;font-size:200%;"><strong>REGARDEZ-MOI !</strong></span><br /><br />Cependant, nous vous déconseillons fortement d’utiliser fréquemment ce genre de mise en forme ! Gardez à l’esprit qu’il faut simplement fermer les balises correctement et dans le bon ordre. Par exemple, ce qui suit est incorrect :<br /><br /><strong>[b][u]</strong>Ceci est incorrect<strong>[/b][/u]</strong></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Citation et données de largeur fixe</h3>
+			
+				<dl class="faq">
+					<dt id="f2r0"><strong>Citation de texte dans les réponses</strong></dt>
+					<p>Il y a deux manières de citer un texte, avec ou sans référence :<ul style="margin-left: 1em;"><li><p>Lorsque vous utilisez la fonction de citation afin de répondre à un message sur le forum, vous devriez noter que le texte qui est ajouté à la fenêtre du message est inséré entre les balises <strong>[quote=&quot;&quot;][/quote]</strong>. Cette méthode vous permet de citer, comme référence, une personne ou autre chose que vous choisissez de commenter ! Par exemple, pour citer une partie d’un texte rédigé par M. Blobby, vous devez saisir :<br /><br /><strong>[quote=&quot;M. Blobby&quot;]</strong>Le texte que M. Blobby a rédigé sera situé ici<strong>[/quote]</strong><br /><br />Le rendu final, &quot;M. Blobby a écrit :&quot;, sera ajouté automatiquement avant le texte actuel. Gardez à l’esprit que vous devez <strong>obligatoirement</strong> insérer les guillemets de citation &quot;&quot; autour du nom que vous citez, ils ne sont pas optionnels.</p></li><li><p>La seconde méthode vous permet de citer quelque chose de manière anonyme. Pour l’utiliser, enfermez le texte entre les balises <strong>[quote][/quote]</strong>. Lorsque vous consulterez le message ultérieurement, il affichera simplement le texte dans un bloc de citation.</p></li></ul></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f2r1"><strong>Mise en forme de codes ou de données de largeur fixe</strong></dt>
+					<p>Si vous souhaitez insérer un fragment de code ou quelque chose qui demande une largeur fixe, comme la police de caractères Courier, vous devez enfermer le texte entre les balises <strong>[code][/code]</strong>. Par exemple :<br /><br /><strong>[code]</strong>echo &quot;Ceci est un fragment de code&quot;;<strong>[/code]</strong><br /><br />Toutes les balises de mise en forme présentes entre les balises <strong>[code][/code]</strong> sont conservées telles quelles lorsque vous consulterez le message ultérieurement. La syntaxe PHP peut être mise en évidence en utilisant les balises <strong>[code=php][/code]</strong> et il est recommandé de publier de réels fragments de code PHP afin d’en améliorer la lisibilité.</p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Genèse de listes</h3>
+			
+				<dl class="faq">
+					<dt id="f3r0"><strong>Création d’une liste non-ordonnée</strong></dt>
+					<p>Le BBCode supporte deux types de liste, la liste ordonnée et la liste non-ordonnée. Elles sont pratiquement identiques par rapport à leur équivalent en HTML. Une liste non-ordonnée publie chaque article l’un après l’autre, en utilisant le caractère étoile. Pour créer une liste non-ordonnée, vous devez utiliser les balises <strong>[list][/list]</strong> et définir chaque article dans la liste en utilisant les balises <strong>[*]</strong>. Par exemple, pour lister vos couleurs favorites, vous pouvez utiliser :<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Rouge<br /><strong>[*]</strong>Bleu<br /><strong>[*]</strong>Jaune<br /><strong>[/list]</strong><br /><br />Ce qui deviendra la liste :<ul style="margin-left: 1em;"><li><p>Rouge</p></li><li><p>Bleu</p></li><li><p>Jaune</p></li></ul></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f3r1"><strong>Création d’une liste ordonnée</strong></dt>
+					<p>Le second type de liste, la liste ordonnée, vous donne le contrôle sur ce qui est affiché devant chaque article. Vous devez utiliser les balises <strong>[list=1][/list]</strong> afin de créer une liste numérotée, ou bien encore les balises <strong>[list=a][/list]</strong> afin de créer une liste alphabétique. Comme pour la liste non-ordonnée, les articles doivent être définis en utilisant la balise <strong>[*]</strong>. Par exemple :<br /><br /><strong>[list=1]</strong><br /><strong>[*]</strong>Aller faire les boutiques<br /><strong>[*]</strong>Acheter un nouvel ordinateur<br /><strong>[*]</strong>Râler contre l’ordinateur lorsqu’il est bloqué<br /><strong>[/list]</strong><br /><br />Deviendra :<ol style="margin-left: 1.3em;" style="list-style-type: decimal;"><li><p>Aller faire les boutiques</p></li><li><p>Acheter un nouvel ordinateur</p></li><li><p>Râler contre l’ordinateur lorsqu’il est bloqué</p></li></ol>Pour créer une liste alphabétique, vous devez cependant utiliser :<br /><br /><strong>[list=a]</strong><br /><strong>[*]</strong>La première réponse possible<br /><strong>[*]</strong>La seconde réponse possible<br /><strong>[*]</strong>La troisième réponse possible<br /><strong>[/list]</strong><br /><br />Ce qui deviendra :<ol style="margin-left: 1.3em;" style="list-style-type: lower-alpha"><li><p>La première réponse possible</p></li><li><p>La seconde réponse possible</p></li><li><p>La troisième réponse possible</p></li></ol></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Création de liens</h3>
+			
+				<dl class="faq">
+					<dt id="f4r0"><strong>Insérer un lien vers un site quelconque</strong></dt>
+					<p>Le BBCode de phpBB propose plusieurs manières de créer des URI (Uniform Resource Indicators), plus connues sous le nom d’URL.<ul style="margin-left: 1em;"><li><p>La première emploie la balise <strong>[url=][/url]</strong>, où ce qui est inséré après le signe = fera agir le contenu de cette balise en tant que lien. Par exemple, pour insérer un lien vers phpBB.com, vous pouvez utiliser :<br /><br /><strong>[url=http://www.phpbb.com/]</strong>Visitez phpBB !<strong>[/url]</strong><br /><br />Ceci génèrera le lien suivant : <a href="http://www.phpbb.com/">Visitez phpBB !</a> Veuillez noter que le lien peut s’ouvrir dans la même fenêtre ou dans une nouvelle fenêtre, selon les préferences du navigateur des utilisateurs.</p></li><li><p>Si vous souhaitez que le lien soit affiché comme un lien basique, vous pouvez employer simplement ceci :<br /><br /><strong>[url]</strong>http://www.phpbb.com/<strong>[/url]</strong><br /><br />Ceci générera le lien suivant : <a href="http://www.phpbb.com/">http://www.phpbb.com/</a></p></li><li><p>De plus, une des fonctionnalités de phpBB permet d’insérer les <i>liens magiques</i>, ce qui transformera n’importe quel lien en lien syntaxiquement correct, sans que vous n’ayez besoin d’indiquer des balises ou même encore d’ajouter http://. Par exemple, en écrivant www.phpbb.com dans votre message, ceci se complètera automatiquement en <a href="http://www.phpbb.com/">www.phpbb.com</a> lorsque vous verrez votre message par la suite.</p></li><li><p>La même chose est valable pour les adresses de courrier électronique, vous pouvez cependant indiquer une adresse explicite, par exemple :<br /><br /><strong>[email]</strong>inconnu@domaine.adr<strong>[/email]</strong><br /><br />Ce qui deviendra : <a href="mailto:inconnu@domaine.adr">inconnu@domaine.adr</a>, ou vous pouvez simplement écrire inconnu@domaine.adr dans votre message et celui-ci sera automatiquement converti lors de la visualisation.</p></li></ul>Comme avec toutes les balises BBCode, vous pouvez insérer des liens autour d’autres balises comme <strong>[img][/img]</strong> (consultez la prochaine question), <strong>[b][/b]</strong>, etc. Comme pour les balises de mise en forme, il vous appartient d’en assurer l’usage correct d’ouverture et de fermeture des balises, et ceci dans le bon ordre, comme par exemple :<br /><br /><strong>[url=https://eaglecraft.fr][img]</strong>https://eaglecraft.fr/images/thumb.jpg<strong>[/url][/img]</strong><br /><br />N’est <span style="text-decoration: underline">pas</span> correct, ce qui peut mener à la suppression de votre message, soyez donc vigilant.</p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg1">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Affichage d’images dans les messages</h3>
+			
+				<dl class="faq">
+					<dt id="f5r0"><strong>Ajout d’une image dans un message</strong></dt>
+					<p>Le BBCode de phpBB intègre une balise qui vous permet d’insérer des images dans vos messages. Les deux choses importantes à garder à l’esprit lors de l’utilisation des balises d’images sont que l’excès d’images dans les messages n’est pas apprécié par la plupart des d’utilisateurs et que l’image que vous souhaitez afficher doit être déjà disponible sur internet (elle ne peut pas exister seulement sur votre ordinateur, à moins que vous travailliez directement depuis un serveur internet !). Pour afficher une image, vous devez insérer entre les balises <strong>[img][/img]</strong> le lien pointant vers l’image. Par exemple :<br /><br /><strong>[img]</strong>https://eaglecraft.fr/images/thumb.jpg<strong>[/img]</strong><br /><br />Comme noté précédemment dans la section des liens située ci-dessus, vous pouvez intégrer une image entre des balises <strong>[url][/url]</strong>. Par exemple :<br /><br /><strong>[url=https://eaglecraft.fr][img]</strong>https://eaglecraft.fr/images/thumb.jpg<strong>[/img][/url]</strong><br /><br />Deviendra :<br /><br /><a href="index.html"><img src="images/thumb.jpg" alt="" /></a></p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				<hr class="dashed" />
+				<dl class="faq">
+					<dt id="f5r1"><strong>Ajout de pièces jointes dans un message</strong></dt>
+					<p>Les pièces jointes peuvent dès à présent être insérées dans les messages en utilisant le nouveau BBCode <strong>[attachment=][/attachment]</strong>, si cette fonctionnalité a été activée par l’administrateur du forum et si vous en avez les permissions appropriées. Pour insérer des pièces jointes en ligne, un onglet à cet effet est affiché en bas de l’écran de rédaction.</p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="panel bg2">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<h3>Divers</h3>
+			
+				<dl class="faq">
+					<dt id="f6r0"><strong>Puis-je ajouter mes propres balises ?</strong></dt>
+					<p>Si vous êtes un administrateur de ce forum et que vous en avez les permissions appropriées, vous pouvez ajouter davantage de BBCodes dans la section « Personnaliser les BBCodes ».</p>
+					<p><a href="faq.php@mode=bbcode.html#faqlinks" class="top2">Haut</a></p>
+				</dl>
+				
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.009s | 5 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

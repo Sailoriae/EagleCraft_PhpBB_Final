@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Codex : Etre Responsable de Projet" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Codex : Etre Responsable de Projet" />
+<meta property="og:url" content="https://eaglecraft.fr/codex.php?page=etre_responsable_de_projet" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="codex.php@page=etre_responsable_de_projet.html" />
+
+<title>EagleCraft - Codex : Etre Responsable de Projet</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-codex">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="codex.php@page=etre_responsable_de_projet.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Codex : Etre Responsable de Projet</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div style="display: none;" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="codex.php@page=accueil.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/codex.php&page=accueil">
+					<span itemprop="name">Codex</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			
+		</div>
+
+		<!--
+			Style a la con du chaos causé par Discord
+		-->
+		<style type="text/css">
+		/* PROPRETE */
+		.panel {
+			text-align: justify;
+		}
+		.cp-list li h3 {
+			margin-top: 5px;
+		}
+		ul.cp-list li a span img {
+			vertical-align: middle;
+			margin-top: -4px;
+			margin-right: 4px;
+		}
+
+		/* LISIBILITE */
+		.text-shadow {
+			text-shadow: 1px 1px 1px #000;
+		}
+		</style>
+
+		<div class="right-column float-right">
+		<div id="navigation" style="padding-top: 5px;">
+			<ul class="cp-list">
+				<li><a href="codex.php@page=accueil.html"><span><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" /> Accueil</span></a></li>
+				<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><span><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" /> Guide des Nouveaux Joueurs</span></a></li>
+				<li><h3><b>Guides</b></h3></li>
+				<li><a href="codex.php@page=mondes.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" /> Mondes</span></a></li>
+				<li><a href="codex.php@page=constructions_et_habitations.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" /> Constructions &amp; Habitations</span></a></li>
+				<li><a href="codex.php@page=commercer.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" /> Commercer</span></a></li>
+				<li><a href="codex.php@page=guides_divers.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" /> Guides Divers</span></a></li>
+				<li><a href="codex.php@page=grades.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" /> Grades</span></a></li>
+				<li><h3><b>Guides Spécifiques</b></h3></li>
+				<li id="active-subsection"><a href="codex.php@page=etre_responsable_de_projet.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" /> Etre Responsable de Projet</span></a></li>
+				<li><a href="codex.php@page=etre_membre_du_conseil.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" /> Etre Membre du Conseil</span></a></li>
+				<li><h3><b>Règles</b></h3></li>
+				<li><a href="codex.php@page=regles_generales.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" /> Règles Générales</span></a></li>
+				<li><a href="codex.php@page=echelle_des_infractions.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" /> Echelle des Infractions</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+
+		<div class="left-column float-left">
+		<div class="panel bg1">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+
+					<p>Vous êtes un Responsable de Projet quand vous gérez une Ville, en ayant le grade de <font class="text-shadow" color="#008000">Maire</font> au mimimum. Cependant, n'importe qui peut être Responsable de Projet, mais avec quelques limitations. Cette page vous informe sur les différents processus pour fonder et gérer sa Ville.</p>
+					<p>Une Ville, c'est une unification de joueurs dans un espace de plus de 50 x 50 cubes sur l'un des deux mondes principaux (Voir <a href="codex.php@page=mondes.html">Mondes</a>).</font></p>
+
+					<br/>
+
+					<h3>Fonder une Ville (Uniquement sur <font class="text-shadow" color="#FF5555">World of Eagle</font> et <font class="text-shadow" color="#000080">World of Design</font>)</h3>
+					<p>Pour créer une Ville, vous devez faire une candidature sur le <a href="forum.php.html">Forum</a> dans «&nbsp;Candidature pour fonder une Ville&nbsp;». Vous pouvez fonder autant de Villes que vous le souhaitez, tant que les précédentes ont étées un minimum développées au niveau constructions et joueurs (Sinon, la nouvelle candidature sera refusée). Cette candidature doit comprendre au minimum :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Une description du projet.</p>
+						</li>
+						<li>
+						<p>Des images ou des descriptions des bâtiments de la Ville. Il est important d'y voir le style d'architecture envisagé.</p>
+						</li>
+						<li>
+						<p>Les dimensions de votre Ville, délimitées sur une capture d'écran des cartes du serveur. Attention, elle ne doit pas être collée à une autre Ville.</p>
+						</li>
+						<li>
+						<p>Pourquoi voulez-vous fonder une Ville ?</p>
+						</li>
+						<li>
+						<p>Un RP qui raconte l'histoire de votre Ville (Facultatif).</p>
+						</li>
+					</ul>
+					<p>Un Membre du Conseil viendra alors valider ou non votre candidature. Puis, ce sont les <font class="text-shadow" color="#AA0000">Administrateurs</font> eux-mêmes qui s'occupent de la création de la Ville, ce qui comporte :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Un système qui vous donne accès à la gestion des habitants et du territoire de la Ville. L'ensemble des commandes à votre disposition est répertorié via la commande : </i>/town</i></p>
+						</li>
+						<li>
+						<p>Un territoire sécurisé englobant la zone proposée dans la candidature.</p>
+						</li>
+						<li>
+						<p>Un Forum dédié à votre Ville.</p>
+						</li>
+					</ul>
+					<p>Une fois la candidature acceptée et que vous êtes officiellement le Responsable de Projet, vous pouvez commencer le chantier.</p>
+
+					<br/>
+
+					<h3>Gérer sa Ville</h3>
+					<p>En tant que Responsable de Projet, vous avez tous les droits sur votre Ville, dans les limites imposées par le Codex. C'est donc à vous de choisir vos représentants, et de gérer les Habitants.</p>
+
+					<h4>Vendre des terrains, maisons et commerces</h4>
+					<p>Vous pouvez vendre des terrains, maisons et commerces à n'importe quel joueur au prix que vous souhaitez. Une limite minimale de 30 Eagles est tout de même imposée. Les joueurs peuvent acheter une maison à plusieurs et se partager la somme à payer.</p>
+
+					<h4>Lois et Sanctions</h4>
+					<p>Vous pouvez aussi ajouter des lois en plus de celles présentes dans le Codex. Ces lois doivent rajouter des interdictions ou des règlementations aux différents Habitants de votre Ville. Si une loi n'est pas respectée par un des Habitants de la Ville, c'est à vous de lui donner un avertissement, ou une sanction :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Si c'est une amende, elle ne peut pas dépasser la somme de 5 Eagles.</p>
+						</li>
+						<li>
+						<p>Autrement vous pouvez l'exclure de votre Ville (Pensez tout de même à lui rendre ses items, sinon, il peut porter plainte).</p>
+						</li>
+					</ul>
+					<p><b>Attention :</b> Vos lois ainsi que les sanctions doivent être notées sur le Forum de votre Ville, et vous devez demandez à vos Habitants de lire ces lois. Autrement, vous ne pourrez pas les sanctionner.</p>
+
+					<h4>Liaisons</h4>
+					<p>Si vous souhaitez qu'un Membre du Conseil relie votre Ville aux réseaux de transports, vous pouvez faire une demande sur le <a href="forum.php.html">Forum</a> dans «&nbsp;Demande Liaison d'une Villes&nbsp;».</p>
+
+					<br/>
+
+					<h3>Cuboïde de Ville</h3>
+					<p>Pour les autres techniques de cuboïdage, voir «&nbsp;Cuboïdes&nbsp;» sur la page <a href="codex.php@page=guides_divers.html">Guides Divers</a>.</p>
+	
+					<h4>Général</h4>
+					<p>Le cuboïde d'une Ville est un territoire sécurisé que seuls les Habitants peuvent modifier. Généralement, ils sont là pour empêcher d'autres personnes de griefer ou de voler des items ou des blocs dans cet espace.</p>
+					<p>Il doit englober toute votre ville, et s'affiche sur les <a href="cartes.php.html">Cartes</a>. Notez que cet affichage se met à jour une fois par jour seulement.</p>
+					<p>Un message s'affiche dans le tchat lorsque vous entrez et sortez de ce territoire. Il permet de repèrer la zone déjà cuboïdée afin d'ajuster l'espace (Voir ci-dessous).</p>
+
+					<h4>Cuboïde du territoire</h4>
+					<p>Le cuboïdage de votre Ville se fait uniquement chunks par chunks. Seul un Responsable de Projet d'une Ville peut cuboïder un territoire. Pour se faire, vous devez vous mettre sur le chunk à protéger et taper la commande : <i>/town claim</i></p>
+					<p>Si vous voulez enlever un chunk sécurisé, vous devez vous mettre sur ce même chunk et exécuter la commande : <i>/town unclaim</i></p>
+					<p><b>Attention :</b> Merci de ne pas en abuser : La Ville doit être en une seule et unique partie !</p>
+					<p>Ce cuboïde de Ville protège le placement et la destruction de blocs, ainsi que le contenu des portes-armures, des cadres et des pupitres. <b>Ainsi, les autres joueurs peuvent quand même intéragir avec les coffres ou les portes non-cuboïdés par un panneau de sécurité !</b></p>
+
+					<br/>
+
+					<h3>Réglementation</h3>
+					<p>Votre Ville  doit de respecter certaines règles de construction :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Les bâtiments doivent rester harmonieux avec un minimum de détails, et repecter le style de construction que vous avez proposé dans votre candidature.</p>
+						</li>
+						<li>
+						<p>Si près du territoire de votre Ville (Moins de 100 cubes), il y a une Maison en Campagne, vous devez voir avec le joueur qui possède cette maison pour soit l'intégrer au projet, soit faire en sorte qu'il la démolisse, soit la laisser en l'état.</p>
+						</li>
+					</ul>
+
+					<h4>Passage de pouvoir</h4>
+					<p>Si un Responsable de Projet veut passer son pouvoir à un autre joueur, il lui suffit de le nommer Responsable de Projet lui aussi, via la commande : <i>/town promote &lt;Nom du Joueur&gt; (&lt;Nom de la Ville&gt;)</i></p>
+
+					<h4>Agrandissement</h4>
+					<p>Pour agrandir votre Ville, vous devez faire une simple demande sur le <a href="forum.php.html">Forum</a> dans «&nbsp;Demande d'Agrandissement d'une Ville&nbsp;», contenant uniquement la zone que vous souhaitez prendre. Notez que vous devrez ensuite la cuboïder via la commande <i>/town claim</i>. Il est inutile de faire des demandes pour de petits agrandissements et des ajustements de votre territoire, vous êtes libres d'utiliser la commande précédente.</p>
+
+					<br/>
+
+					<h3>Commandes utiles</h3>
+					<p>Voici les autres commande à votre disposition :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Ajouter un joueur, indispensable s'il veux rejoindre la Ville : <i>/town add &lt;Nom du joueur&gt; (&lt;Nom de la Ville&gt;)</i><br/>
+						Il pourra alors modifier la Ville.</p>
+						</li>
+						<li>
+						<p>Enlever un joueur de la Ville, pensez à lui rendre ses ressources et lui racheter ses propriétés : <i>/town remove &lt;Nom du Joueur&gt; (&lt;Nom de la Ville&gt;)</i></p>
+						</li>
+						<li>
+						<p>Ajouter un Responsable de Projet : <i>/town promote &lt;Nom du Joueur&gt; (&lt;Nom de la Ville&gt;)</i><br/>
+						Notez que vous devez avoir pleinement confiance en cette personne, car elle a les mêmes droits que vous.</p>
+						</li>
+						<li>
+						<p>Enlever un Responsable de Projet : <i>/town demote &lt;Nom du Joueur&gt; (&lt;Nom de la Ville&gt;)</i></p>
+						</li>
+					</ul>
+
+					<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		</div>
+
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.009s | 8 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

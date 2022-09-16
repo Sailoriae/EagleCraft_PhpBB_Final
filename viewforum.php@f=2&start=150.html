@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Consulter le forum : Présentations pour devenir Villageois" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Vous êtes Vagabond ? Passez Villageois ici en publiant votre présentation !" />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Consulter le forum : Présentations pour devenir Villageois" />
+<meta property="og:url" content="https://eaglecraft.fr/viewforum.php?f=2&amp;start=150" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Vous êtes Vagabond ? Passez Villageois ici en publiant votre présentation !" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="viewforum.php@f=2&amp;start=150.html" />
+
+<title>EagleCraft - Consulter le forum : Présentations pour devenir Villageois</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '7';
+	var per_page = '25';
+	var base_url = './viewforum.php?f=2';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-viewforum">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="viewforum.php@f=2&amp;start=150.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1 style="font-size: 16px;">Consulter le forum : Présentations pour devenir Villageois</h1>
+			
+		</div><div itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span style="display: none;" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="forum.php.html" accesskey="h" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/forum.php">
+					<span itemprop="name">Forums</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=1.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=1">
+					<span itemprop="name">Candidatures</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=2.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=2">
+					<span itemprop="name">Présentations pour devenir Villageois</span>
+				</a>
+				<meta itemprop="position" content="4" />
+			</span>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+		<div>
+			<!--
+				NOTE : Ajouter style="display: none;" pour ne plus afficher la description du forum
+			-->
+			<div style="margin-bottom: 1em;">Vous êtes Vagabond ? Passez Villageois ici en publiant votre présentation !</div>
+		</div>
+		<div class="forumlist">
+		
+			<div class="catglow">
+				<div class="cathead-m">
+					<div class="cathead-r">
+						<div class="cathead-l">
+							Forum 
+						</div>
+					</div>
+				</div>
+
+				<div class="collapsethis">
+					<table class="cat" cellpadding="0" cellspacing="0" width="100%">
+			
+					<tr>
+						<td class="forumicon"><img src="styles/eaglecraft/imageset/forum_link.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+						<td class="forumdetails forumlink">
+							
+							<a href="codex.php@page=guide_des_nouveaux_joueurs.html" class="forumtitle">A lire : Guide des Nouveaux Joueurs</a> 
+							<br />
+							<span class="forum-descriptions"></span>
+							<span class="phones">
+								
+							</span>
+							
+						</td>
+						
+						<td colspan="3" class="forumclicks tablet">
+							
+						</td>
+						
+					</tr>
+			
+					</table>
+				</div>
+			</div>
+			
+		</div>
+		<div class="topic-actions" style="margin-top: 1em;">
+
+		
+		<div class="pagination">
+			180 sujets<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div><a href="viewforum.php@f=2&amp;start=150.html#" onclick="jumpto(); return false;" title="Cliquez afin d’aller vers la page…">Page <strong>7</strong> sur <strong>8</strong></a><span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div><span><a href="viewforum.php@f=2.html">1</a><span class="page-dots"> ... </span><a href="viewforum.php@f=2&amp;start=75.html">4</a><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=100.html">5</a><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=125.html">6</a><span class="page-sep">, </span><strong>7</strong><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=175.html">8</a></span>
+		</div>
+		
+
+		</div>
+		
+
+		<div class="clear"></div>
+
+		
+		<br />
+		<div class="catglow">
+			<div class="cathead-m">
+				<div class="cathead-r">
+					<div class="cathead-l">
+						Sujets 
+					</div>
+				</div>
+			</div>
+			<div class="collapsethis">
+			<table class="cat" cellpadding="0" cellspacing="0" width="100%">
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=107" class="topictitle">candi de blaknoir</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">blaknoir</span> &raquo; Mer 19 Nov 2014, 17:12</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Sam 22 Nov 2014, 15:50</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>995</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Sam 22 Nov 2014, 15:50</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=103" class="topictitle">candidature pour etre villageois de aags</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">aags</span> &raquo; Mer 12 Nov 2014, 15:15</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Sam 15 Nov 2014, 16:23</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>3</span><br />Réponses </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1617</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Sam 15 Nov 2014, 16:23</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=100" class="topictitle">Candidature de Rigalion wèche ma gueule !</a>
+					<span class="forum-descriptions">par <span style="color: #55FF55;" class="username-coloured">Riiiga</span> &raquo; Jeu 06 Nov 2014, 22:59</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Lun 10 Nov 2014, 21:42</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>2</span><br />Réponses </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1549</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Lun 10 Nov 2014, 21:42</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=101" class="topictitle">Candidature villageois chtirom58</a>
+					<span class="forum-descriptions">par <span style="color: #AAAAAA;" class="username-coloured">chtirom58</span> &raquo; Dim 09 Nov 2014, 10:39</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Lun 10 Nov 2014, 21:27</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1028</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Lun 10 Nov 2014, 21:27</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=98" class="topictitle">candidature villageois lugory11</a>
+					<span class="forum-descriptions">par <span style="color: #00AA00;" class="username-coloured">lugory11</span> &raquo; Mer 05 Nov 2014, 22:08</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 07 Nov 2014, 22:52</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1020</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 07 Nov 2014, 22:52</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=97" class="topictitle">soda654</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">Soda754</span> &raquo; Mer 05 Nov 2014, 20:41</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 07 Nov 2014, 22:29</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1075</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 07 Nov 2014, 22:29</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=95" class="topictitle">Candidature villageois Titanyx</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">Titanyx</span> &raquo; Dim 02 Nov 2014, 21:46</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Lun 03 Nov 2014, 19:35</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>908</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Lun 03 Nov 2014, 19:35</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=92" class="topictitle">Candidature Villageois de Superfantaisie</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">Superfantaisie</span> &raquo; Sam 25 Oct 2014, 13:39</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Dim 02 Nov 2014, 12:39</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1395</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Dim 02 Nov 2014, 12:39</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=90" class="topictitle">Candidature Aazed</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">Aazed</span> &raquo; Jeu 23 Oct 2014, 17:02</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 24 Oct 2014, 15:11</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>974</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 24 Oct 2014, 15:11</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=89" class="topictitle">[Candidature] Les_Chlaques</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">LesChlaques</span> &raquo; Jeu 23 Oct 2014, 15:09</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 24 Oct 2014, 15:07</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1080</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 24 Oct 2014, 15:07</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=77" class="topictitle">candidature pour devenir villageois</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">yioxe</span> &raquo; Sam 11 Oct 2014, 14:18</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Dim 12 Oct 2014, 12:26</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1105</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Dim 12 Oct 2014, 12:26</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=71" class="topictitle">[transfert] candidature villageois</a>
+					<span class="forum-descriptions">par <span style="color: #00AA00;" class="username-coloured">brunovalats</span> &raquo; Mer 08 Oct 2014, 19:27</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Jeu 09 Oct 2014, 20:20</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1025</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Jeu 09 Oct 2014, 20:20</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=68" class="topictitle">candidature pour etre villageois</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">simlegrand</span> &raquo; Mar 07 Oct 2014, 17:28</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 08 Oct 2014, 19:08</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1073</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 08 Oct 2014, 19:08</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=65" class="topictitle">Passage au grade villageois de Fermier</a>
+					<span class="forum-descriptions">par <span style="color: #55FFFF;" class="username-coloured">eternalfate89</span> &raquo; Sam 04 Oct 2014, 11:36</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mar 07 Oct 2014, 18:14</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1033</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mar 07 Oct 2014, 18:14</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=59" class="topictitle">passer au grade villageois</a>
+					<span class="forum-descriptions">par <span style="color: #FFFF55;" class="username-coloured">cratox</span> &raquo; Dim 31 Août 2014, 13:59</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Lun 01 Sep 2014, 11:01</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1171</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Lun 01 Sep 2014, 11:01</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=56" class="topictitle">Candidature pour passer au grade de villageois</a>
+					<span class="forum-descriptions">par <span style="color: #AAAAAA;" class="username-coloured">PhenixStrike04</span> &raquo; Jeu 28 Août 2014, 11:15</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 29 Août 2014, 09:56</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>984</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 29 Août 2014, 09:56</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=49" class="topictitle">[Copie] Candidature pour être Villageois</a>
+					<span class="forum-descriptions">par <span style="color: #55FFFF;" class="username-coloured">Sahrtal</span> &raquo; Mer 27 Août 2014, 20:06</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Jeu 28 Août 2014, 15:49</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1013</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Jeu 28 Août 2014, 15:49</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=43" class="topictitle">[Transphère] Candidature pour être villageois .</a>
+					<span class="forum-descriptions">par <span style="color: #55FFFF;" class="username-coloured">Elvava</span> &raquo; Lun 25 Août 2014, 20:24</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mar 26 Août 2014, 17:53</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1108</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mar 26 Août 2014, 17:53</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=41" class="topictitle">candidature benoit5650</a>
+					<span class="forum-descriptions">par <span style="color: #55FF55;" class="username-coloured">killer_du_115</span> &raquo; Ven 22 Août 2014, 12:55</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Sam 23 Août 2014, 11:53</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1094</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Sam 23 Août 2014, 11:53</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=35" class="topictitle">candidature villageois Oxices_35</a>
+					<span class="forum-descriptions">par <span style="color: #AAAAAA;" class="username-coloured">Oxices_35</span> &raquo; Mar 12 Août 2014, 17:44</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 13 Août 2014, 11:45</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>956</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 13 Août 2014, 11:45</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=34" class="topictitle">Passage au grade Villageois Par Kenidu24x</a>
+					<span class="forum-descriptions">par <span style="color: #AAAAAA;" class="username-coloured">Kenidu24x</span> &raquo; Mar 12 Août 2014, 17:35</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 13 Août 2014, 11:33</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1016</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 13 Août 2014, 11:33</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=36" class="topictitle">demande de grade villageois</a>
+					<span class="forum-descriptions">par <span style="color: #55FFFF;" class="username-coloured">Constant62</span> &raquo; Mar 12 Août 2014, 21:52</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 13 Août 2014, 11:14</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>927</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 13 Août 2014, 11:14</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=32" class="topictitle">[Transfert]Candidature pour passer villageoise</a>
+					<span class="forum-descriptions">par <span style="color: #00AA00;" class="username-coloured">Jingie</span> &raquo; Mar 12 Août 2014, 16:22</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 13 Août 2014, 11:09</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>972</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 13 Août 2014, 11:09</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=19" class="topictitle">Candidature villageois regorf</a>
+					<span class="forum-descriptions">par <span style="color: #FFAA00;" class="username-coloured">regorf</span> &raquo; Ven 08 Août 2014, 12:55</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Ven 08 Août 2014, 13:03</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1039</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Ven 08 Août 2014, 13:03</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="forumicon"><img src="styles/eaglecraft/imageset/topic_read.gif" width="38" height="38" alt="Aucun message non lu" title="Aucun message non lu" /></td>
+				<td class="forumdetails">
+					<a href="https://eaglecraft.fr/viewtopic.php?f=2&amp;t=16" class="topictitle">candidature</a>
+					<span class="forum-descriptions">par <span style="color: #55FFFF;" class="username-coloured">thewomencraft</span> &raquo; Mer 06 Août 2014, 18:19</span>
+					<span class="phones">
+						Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+						<br /><span class="fade">Mer 06 Août 2014, 18:55</span>
+					</span>
+				</td>
+				<td class="forumtopics tablet"><div class="statbubble"><span>1</span><br />Réponse </div></td>
+				<td class="forumposts tablet"><div class="statbubble"><span>1184</span><br />Vues </div></td>
+				<td class="tablet">
+					Dernier message par <span style="color: #AA0000;" class="username-coloured">Auldeor</span>
+					<br /><span class="fade">Mer 06 Août 2014, 18:55</span>
+				</td>
+			</tr>
+		
+		</table>
+		</div>
+		</div>
+		
+		<br />
+		<form method="post" action="viewforum.php@f=2&amp;start=150.html">
+			<fieldset class="display-options">
+				<a href="viewforum.php@f=2&amp;start=125.html" class="left-box left">Précédent</a><a href="viewforum.php@f=2&amp;start=175.html" class="right-box right">Suivant</a>
+			</fieldset>
+		</form>
+		<hr />
+		
+		<div class="topic-actions">
+			
+
+			<div class="pagination">
+				 180 sujets<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div><a href="viewforum.php@f=2&amp;start=150.html#" onclick="jumpto(); return false;" title="Cliquez afin d’aller vers la page…">Page <strong>7</strong> sur <strong>8</strong></a><span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div><span><a href="viewforum.php@f=2.html">1</a><span class="page-dots"> ... </span><a href="viewforum.php@f=2&amp;start=75.html">4</a><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=100.html">5</a><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=125.html">6</a><span class="page-sep">, </span><strong>7</strong><span class="page-sep">, </span><a href="viewforum.php@f=2&amp;start=175.html">8</a></span>
+			</div>
+
+		</div>
+		<p></p><p><a href="index.php.html" class="left-box tablet left" accesskey="r">Retour vers  Forums</a></p>
+		
+		<div class="clear"></div>
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.014s | 13 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

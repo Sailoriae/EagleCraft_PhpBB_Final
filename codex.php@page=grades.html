@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Codex : Grades" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Codex : Grades" />
+<meta property="og:url" content="https://eaglecraft.fr/codex.php?page=grades" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Le Codex est le wiki, ou l'enclyclopédie du serveur Minecraft EagleCraft." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="codex.php@page=grades.html" />
+
+<title>EagleCraft - Codex : Grades</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-codex">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="codex.php@page=grades.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Codex : Grades</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div style="display: none;" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="codex.php@page=accueil.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/codex.php&page=accueil">
+					<span itemprop="name">Codex</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			
+		</div>
+
+		<!--
+			Style a la con du chaos causé par Discord
+		-->
+		<style type="text/css">
+		/* PROPRETE */
+		.panel {
+			text-align: justify;
+		}
+		.cp-list li h3 {
+			margin-top: 5px;
+		}
+		ul.cp-list li a span img {
+			vertical-align: middle;
+			margin-top: -4px;
+			margin-right: 4px;
+		}
+
+		/* LISIBILITE */
+		.text-shadow {
+			text-shadow: 1px 1px 1px #000;
+		}
+		</style>
+
+		<div class="right-column float-right">
+		<div id="navigation" style="padding-top: 5px;">
+			<ul class="cp-list">
+				<li><a href="codex.php@page=accueil.html"><span><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" /> Accueil</span></a></li>
+				<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><span><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" /> Guide des Nouveaux Joueurs</span></a></li>
+				<li><h3><b>Guides</b></h3></li>
+				<li><a href="codex.php@page=mondes.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" /> Mondes</span></a></li>
+				<li><a href="codex.php@page=constructions_et_habitations.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" /> Constructions &amp; Habitations</span></a></li>
+				<li><a href="codex.php@page=commercer.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" /> Commercer</span></a></li>
+				<li><a href="codex.php@page=guides_divers.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" /> Guides Divers</span></a></li>
+				<li id="active-subsection"><a href="codex.php@page=grades.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" /> Grades</span></a></li>
+				<li><h3><b>Guides Spécifiques</b></h3></li>
+				<li><a href="codex.php@page=etre_responsable_de_projet.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" /> Etre Responsable de Projet</span></a></li>
+				<li><a href="codex.php@page=etre_membre_du_conseil.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" /> Etre Membre du Conseil</span></a></li>
+				<li><h3><b>Règles</b></h3></li>
+				<li><a href="codex.php@page=regles_generales.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" /> Règles Générales</span></a></li>
+				<li><a href="codex.php@page=echelle_des_infractions.html"><span><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" /> Echelle des Infractions</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+
+		<div class="left-column float-left">
+		<div class="panel bg1">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+
+					<p>EagleCraft est basé sur un système de grades que vous pouvez monter au fur et à mesure de votre aventure.</p>
+
+					<h3><font class="text-shadow" color="#AAAAAA">Vagabond</font></h3>
+					<h4>Accès au Grade</h4>
+					<p>Vous obtenez ce grade lors de votre première connexion sur le serveur.</p>
+
+					<h4>Description</h4>
+					<p><font class="text-shadow" color="#AAAAAA">Vagabond</font> est le grade par défaut sur le serveur, il permet aux nouveaux de visiter les mondes et de commencer à miner sur <font class="text-shadow" color="#FFFFFF">World of Mine</font>.</p>
+
+					<h4>A ce grade, vous pouvez...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Récolter des ressources sur <font class="text-shadow" color="#FFFFFF">World of Mine</font>.</p>
+						</li>
+						<li>
+						<p>Jouer à des mini-jeux.</p>
+						</li>
+						<li>
+						<p>Créer un domicile via la commande : <i>/sethome</i></p>
+						</li>
+						<li>
+						<p>Adopter et sécuriser 5 chevaux.</p>
+						</li>
+						<li>
+						<p>Vous déplacer librement sur les mondes et visiter.</p>
+						</li>
+						<li>
+						<p>Tchater librement, ramasser et jeter des items...</p>
+						</li>
+						<li>
+						<p>Utiliser le menu (Commande <i>/menu</i>), utiliser les warps (Commande <i>/warp</i>)...</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#FFFF55">Villageois</font></h3>
+					<h4>Accès au Grade</h4>
+					<p>N'importe quel <font class="text-shadow" color="#AAAAAA">Vagabond</font> peut devenir <font class="text-shadow" color="#FFFF55">Villageois</font> en postant une simple présentation (Qui est comme une candidature, mais en moins exigeant) dans le <a href="forum.php.html">Forum</a>. Pour cela, votre pésentation doit comprendre :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Présentation simple : Ne parlez pas de votre identité, mais plutôt de vos gouts, passions et projets (Notament sur Internet) par exemple. Cette partie a uniquement un but présentatif, ne divulgez que ce que vous ne souhaitez pas dire (Souvenez vous que votre présentation est visionable par tous).</p>
+						</li>
+						<li>
+						<p>Vos aventures sur Minecraft : Réalisation, constructions... (Facultatif)</p>
+						</li>
+						<li>
+						<p>Que comptez-vous faire sur le serveur : Vos projets, intentions... (Facultatif)</p>
+						</li>
+					</ul>
+					<p>Cette présentation peut être très courte. Toutes les présentations sont validées.</p>
+
+					<h4>Description</h4>
+					<p><font class="text-shadow" color="#FFFF55">Villageois</font> est un rang qui vous permet d'avoir totalement accès aux principales fonctionnalités du serveur.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Acheter ou construire une maison dans une Ville et/ou aider le Responsable de Projet à améliorer son projet.</p>
+						</li>
+						<li>
+						<p>Construire votre maison en Campagne sur un des Mondes Principaux.</p>
+						</li>
+						<li>
+						<p>Avoir un deuxième «&nbsp;<i>/home</i>&nbsp;».</p>
+						</li>
+						<li>
+						<p>Construire dans les Mondes PvP Secondaires.</p>
+						</li>
+						<li>
+						<p>Devenir Responsable de Projet d'une Ville, mais pas en fonder. Vous ne pouvez pas utiliser la commande : <i>/town claim</i></p>
+						</li>
+						<li>
+						<p>Utiliser la commande <i>/book</i> pour éditer un livre que vous avez signé.</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#55FF55">Citoyen</font></h3>
+					<h4>Accès au Grade</h4>
+					<p>Aprés 2 semaines en tant que <font class="text-shadow" color="#FFFF55">Villageois</font>, vous pouvez devenir <font class="text-shadow" color="#55FF55">Citoyen</font> en postant votre candidature dans le <a href="forum.php.html">Forum</a>. Pour cela, votre candidature doit comprendre :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Présentation (Facultatif).</p>
+						</li>
+						<li>
+						<p>Vos compétences sur Minecraft (Ce que vous savez faire sur Minecraft et dans quel(s) domaine(s) vous êtes le meilleur).</p>
+						</li>
+						<li>
+						<p>Vos réalisations sur le serveur (Images ou textes).</p>
+						</li>
+						<li>
+						<p>Un RP parlant du début de votre aventure sur EagleCraft.</p>
+						</li>
+					</ul>
+
+					<h4>Description</h4>
+					<p><font class="text-shadow" color="#55FF55">Citoyen</font> est le rang qui vous permet d'acheter une maison en Capitale si vous le souhaitez et de créer des Commerces.<p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Acheter une maison en Capitale.</p>
+						</li>
+						<li>
+						<p>Créer des Commerces. Voir la page <a href="codex.php@page=commercer.html">Commercer</a>.</p>
+						</li>
+						<li>
+						<p>Avoir un troisième «&nbsp;<i>/home</i>&nbsp;».</p>
+						</li>
+						<li>
+						<p>Adopter et sécuriser 10 chevaux.</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#00AA00">Maire</font></h3>
+					<h4>Accès au Grade</h4>
+					<p>Aprés 1 mois en tant que <font class="text-shadow" color="#55FF55">Citoyen</font>, vous pouvez devenir <font class="text-shadow" color="#00AA00">Maire</font> en postant votre candidature dans le <a href="forum.php.html">Forum</a>. Pour cela, votre candidature doit comprendre :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Présentation (Falcultatif).</p>
+						</li>
+						<li>
+						<p>Vos compétences sur Minecraft (Ce que vous savez faire sur Minecraft et dans quel(s) domaine(s) vous êtes le meilleur).</p>
+						</li>
+						<li>
+						<p>Vos réalisations sur le serveur (Images ou textes, en évitant ce que vous avez montré dans le candidature citoyenne).</p>
+						</li>
+						<li>
+						<p>Pourquoi voulez-vous devenir <font class="text-shadow" color="#00AA00">Maire</font> ? (Voulez-vous devenir Responsable de Projet d'une Ville, créer une Ville, ou juste continuer votre parcourt ?)</p>
+						</li>
+						<li>
+						<p>La suite du RP de votre candidature citoyenne, toujours sur votre aventure sur le serveur.</p>
+						</li>
+					</ul>
+
+					<h4>Description</h4>
+					<p>Le grade de <font class="text-shadow" color="#00AA00">Maire</font> vous permet de faire une candidature pour créer une Ville sur le serveur.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Faire une candidature pour créer une Ville. Plus d'informations sur la page <a href="codex.php@page=etre_responsable_de_projet.html">Etre Responsable de Projet</a>.</p>
+						</li>
+						<li>
+						<p>Utiliser la commande : <i>/town claim</i></p>
+						</li>
+						<li>
+						<p>Avoir un quatrième «&nbsp;<i>/home</i>&nbsp;».</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#55FFFF">Noble</font></h3>
+					<h4>Accès au Grade</h4>
+					<p>Aprés 1 mois en tant que <font class="text-shadow" color="#00AA00">Maire</font>, vous pouvez devenir <font class="text-shadow" color="#55FFFF">Noble</font> en postant votre candidature dans le <a href="forum.php.html">Forum</a>. Pour cela, votre candidature doit comprendre :</p>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Présentation (Falcultatif).</p>
+						</li>
+						<li>
+						<p>Vos compétences sur Minecraft (Ce que vous savez faire sur Minecraft et dans quel(s) domaine(s) vous êtes le meilleur).</p>
+						</li>
+						<li>
+						<p>Vos réalisations sur le serveur (Images ou textes, en évitant ce que vous avez montré dans vos autres candidatures).</p>
+						</li>
+						<li>
+						<p>Pourquoi voulez-vous devenir noble ? Et que comptez-vous faire maintenant ? (Projets, Constructions...).</p>
+						</li>
+						<li>
+						<p>La suite du RP de vos autres candidatures, toujours sur votre aventure sur le serveur.</p>
+						</li>
+					</ul>
+
+					<h4>Description</h4>
+					<p><font class="text-shadow" color="#55FFFF">Noble</font> est un rang qui se mérite, pour les personnes qui ont contribuées à l'avancement du serveur.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Adopter et sécuriser 20 chevaux.</p>
+						</li>
+						<li>
+						<p>Avoir un cinquième «&nbsp;<i>/home</i>&nbsp;».</p>
+						</li>
+						<li>
+						<p>Créer des Blocs Vendeurs en illimité.</p>
+						</li>
+					</ul>
+
+				<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+
+		<div class="panel bg1">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+
+					<h3><font class="text-shadow" color="#FFAA00">Noble Plus</font> - Membre du Conseil d'EagleCraft</h3>
+					<h4>Accès au Grade</h4>
+					<p>Les <font class="text-shadow" color="#FFAA00">Nobles Plus</font> sont nommés par les <font class="text-shadow" color="#AA0000">Administrateurs</font>.</p>
+
+					<h4><b>Description</b></h4>
+					<p><font class="text-shadow" color="#FFAA00">Noble Plus</font> est un grade ressemblant à celui de <font class="text-shadow" color="#AA00AA">Modérateur</font>. Celui-ci gère le serveur mais n'a pas accès au mode créatif.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Voler (Dans les airs, pas des items), à activer via la commande (Indisponible sur <font class="text-shadow" color="#AA00AA">END</font>) : <i>/fly</i></p>
+						</li>
+						<li>
+						<p>Utiliser une multitude d'autres commandes liées à la modération du serveur. Voir <a href="codex.php@page=etre_membre_du_conseil.html">Etre Membre du Conseil</a>.</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#AA00AA">Modérateur</font> - Membre du Conseil d'EagleCraft</h3>
+					<h4>Accès au Grade</h4>
+					<p>Les <font class="text-shadow" color="#AA00AA">Modérateurs</font> sont nommês par les <font class="text-shadow" color="#AA0000">Administrateurs</font>.</p>
+
+					<h4>Description</h4>
+					<p>Les <font class="text-shadow" color="#AA00AA">Modérateur</font> ont les mêmes fonctions que les <font class="text-shadow" color="#FFAA00">Noble Plus</font>. Cependant, ils ont accès au mode créatif. Attenntion, il ne faut pas utiliser cette commande pour développer des constructions dans des villes, ou en campagne afin de ne pas anéantir le RP du serveur.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Vous mettre en mode créatif : <i>/creatif</i>, et vous remettre en mode survie : <i>/survie</i>.</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#0000AA">Modérateur Suprême</font> - Membre du Conseil d'EagleCraft</h3>
+					<h4>Accès au Grade</h4>
+					<p>Les <font class="text-shadow" color="#0000AA">Modérateurs Suprêmes</font> sont nommés par les <font class="text-shadow" color="#AA0000">Administrateurs</font>.</p>
+
+					<h4>Description</h4>
+					<p><font class="text-shadow" color="#0000AA">Modérateur Suprême</font> est un rang ressemblant à celui de Modérateur avec quelques commandes supplémentaires.</p>
+
+					<h4>A ce grade, vous pouvez en plus...</h4>
+					<ul style="margin-left: 1em;">
+						<li>
+						<p>Utiliser une partie de la commande <i>/time</i>.</p>
+						</li>
+					</ul>
+
+					<br/>
+
+					<h3><font class="text-shadow" color="#AA0000">Administrateur</font> - Président du Conseil d'EagleCraft</h3>
+					<h4>Description</h4>
+					<p>Les <font class="text-shadow" color="#AA0000">Administrateurs</font> sont les fondateurs du serveur, ils ont accès à une grande partie des commandes existantes et à l'administration du serveur Minecraft et du <a href="forum.php.html">Forum</a>.</p>
+					<p>Pour les curieux, sachez que, pour des raisons de sécurité, personne n'est opérateur sur le serveur Minecraft (Commande <i>/op</i>). C'est pour cela que les <font class="text-shadow" color="#AA0000">Administrateurs</font> n'ont accès qu'à une partie très limité des commandes.</p>
+
+					<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		</div>
+
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.009s | 8 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

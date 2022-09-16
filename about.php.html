@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Découvrir / A Propos" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="EagleCraft est un serveur Minecraft polyvalent, entièrement gratuit et ouvert à tous." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Découvrir / A Propos" />
+<meta property="og:url" content="https://eaglecraft.fr/about.php" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="EagleCraft est un serveur Minecraft polyvalent, entièrement gratuit et ouvert à tous." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="about.php.html" />
+
+<title>EagleCraft - Découvrir / A Propos</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-about">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="about.php.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1>Découvrir / A Propos</h1>
+			
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<div style="display: none;" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="about.php.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/about.php">
+					<span itemprop="name">Découvrir / A Propos</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+		</div>
+
+		<!--
+			Style a la con du chaos causé par Discord
+		-->
+		<style type="text/css">
+		/* BIENVENUE */
+		#bienvenue {
+			margin-bottom: 5px;
+			padding: 3%;
+			border-radius: 5px;
+			background: url("styles/eaglecraft/template/pages/about/fond.jpg") center;
+			background-size: cover;
+		}
+
+		#bienvenue h2,
+		#bienvenue p {
+			margin: 0;
+			text-align: center;
+			color: #ffffff;
+		}
+
+		@media screen and (max-width:749.99px) {
+			#bienvenue h2 {
+				font-size: 17px;
+			}
+		}
+
+		#bienvenue h2 a,
+		#bienvenue p a {
+			padding: 3px;
+			display: inline-block;
+			margin: 1%;
+		}
+
+		#bienvenue h2 a img,
+		#bienvenue p a img {
+			margin-right: 3px;
+			vertical-align: middle;
+		}
+
+		@media screen and (min-width:1200px) {
+			.left-video-column {
+				width: 69%;
+			}
+
+			.right-video-column {
+				width: 30%;
+			}
+		}
+
+		@media screen and (max-width:1199.99px) {
+			.left-video-column {
+				width: 100%;
+			}
+
+			.right-video-column {
+				width: 100%;
+			}
+		}
+
+		/* MODES DE JEU */
+
+		@media screen and (min-width:750px) {
+			.mode {
+				display: inline-block;
+				width: 30%;
+				vertical-align: middle;
+			}
+
+			.mode-centre {
+				width: 38.29%;
+			}
+		}
+
+		@media screen and (max-width:749.99px) {
+			.modes  {
+				display: flex;
+				flex-direction: column;
+			}
+			.mode-centre {
+				order: -1;
+			}
+		}
+
+		.mode {
+			padding: 2px;
+		}
+
+		.mode-title {
+			margin: 5px 0 5px 0;
+			padding: 5px 5px 5px 5px;
+			border-radius: 5px;
+		}
+
+		/* PROPRETE */
+
+		.panel {
+			text-align: justify;
+		}
+
+		/* LISIBILITE */
+
+		.text-shadow {
+    		text-shadow: 1px 1px 1px #000;
+		}
+		</style>
+
+		<div id="bienvenue">
+			<div class="right-video-column float-left">
+				<h2>Depuis 2012, EagleCraft est un serveur Minecraft entièrement gratuit et ouvert à tous. Ici, nous voulons garder l'esprit chaleureux d'un serveur Minecraft Semi-RP «&nbsp;entre amis&nbsp;», tels qu'ils l'étaient au du début des années 2010.</h2>
+				<br/>
+				<h2>
+					<a class="button1" href="jouer.php.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" alt="" width="25" height="25" /> play.eaglecraft.fr</a>
+					<a class="button1" href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/codex.png" alt="" width="25" height="25" /> Codex (Wiki)</a>
+				</h2>
+				<p>
+					<a class="button1" href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" alt="" width="16" height="16" /> Guide des Nouveaux Joueurs</a>
+				</p>
+			</div>
+
+			<div class="left-video-column float-right">
+				<style type="text/css">
+				.video-wrapper {
+					width: auto;
+				}
+				.video-container {
+					position: relative;
+					width: 100%;
+					padding-top: 56.25%;
+					overflow: hidden;
+					border-radius: 5px;
+				}
+				.video-container iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+				</style>
+				<div class="video-wrapper">
+					<div class="video-container">
+						<iframe src="https://www.youtube-nocookie.com/embed/AwjBwR8jVu4?modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<div class="main-title bgi2">
+			<h2 style="text-align: center; margin-bottom: -10px;">Un serveur polyvalent...</h2>
+			<h2 style="text-align: center; color: #ffffff; font-size: 15px;"> EagleCraft est un serveur Semi-RP. Mais il vous pouvez aussi faire du PvP et des Mini-jeux.</h2>
+		</div>
+
+		<div class="modes">
+		<div class="mode">
+			<div class="mode-title" style="background: url('styles/eaglecraft/template/pages/about/pvp.jpg'); background-size: cover;">
+				<div style="vertical-align: middle;"><h2 style="text-align: center; color: #ffffff;">Player versus Player</h2></div>
+			</div>
+			<div class="panel bg4">
+				<div class="inner">
+					<span class="corners-top"><span></span></span>
+						<h2><font class="text-shadow" color="#55FF55">World of War</font> est le monde où la loi du plus fort règne ! Cachez vous pour construire et survivre, ou bien pillez vos ennemis : Il n'y a aucune limite.</h2>
+					<span class="corners-bottom"><span></span></span>
+				</div>
+			</div>
+		</div><div class="mode mode-centre">
+			<div class="mode-title" style="background: url('styles/eaglecraft/template/pages/about/semi-rp.jpg'); background-size: cover;">
+				<div style="vertical-align: middle;"><h2 style="text-align: center; color: #ffffff; margin-bottom: 0;">Semi-RolePlay</h2><h2 style="text-align: center; color: #ffffff; margin-top: 0; font-size: 15px;">ou Survival Multiplayer (SMP)</h2></div>
+			</div>
+			<div class="panel bg4">
+				<div class="inner">
+					<span class="corners-top"><span></span></span>
+						<h2><font class="text-shadow" color="#0000AA">World of Design</font> et <font class="text-shadow" color="#FF5555">World of Eagle</font> sont les mondes Semi-RP où vous pouvez construire votre maison, rejoindre des Villes et faire du commerce.<br/>Cependant, pour vous fournir des ressources, vous devez aller sur <font class="text-shadow" color="#FFFFFF">World of Mine</font>.</h2>
+					<span class="corners-bottom"><span></span></span>
+				</div>
+			</div>
+		</div><div class="mode">
+			<div class="mode-title" style="background: url('styles/eaglecraft/template/pages/about/minijeux.jpg'); background-size: cover;">
+				<div style="vertical-align: middle;"><h2 style="text-align: center; color: #ffffff;">Mini-jeux</h2></div>
+			</div>
+			<div class="panel bg4">
+				<div class="inner">
+					<span class="corners-top"><span></span></span>
+						<h2><font class="text-shadow" color="#FFFF55">World of Fun</font> est le monde équipé de mini-jeux automatisés. De nombreux jeux vous attendent comme des Spleefs, des Skywars, des Courses, des Death Matchs...</h2>
+					<span class="corners-bottom"><span></span></span>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="main-title bgi3">
+			<h2 align="center">A Propos</h2>
+		</div>
+
+		<div class="left-column float-left">
+		<div class="panel bg1">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+					<h3>Minecraft en Bref</h3>
+					<p>Minecraft est un jeu vidéo de type «&nbsp;Bac à sable&nbsp;», créé par Markus «&nbsp;Notch&nbsp;» Person, puis développé par <a href="http://www.mojang.com" target="_blank" rel="noopener">Mojang</a>. Le joueur est plongé dans un monde cubique généré aléatoirement, qui simule une nature vierge et hostile. Il doit y survivre en exploitant les ressources naturelles, ou est libre de partir en exploration, ou bien de construire avec son imagination pour seul limite.</p>
+					<p>En effet, le jeu n'impose aucun objectif précis. Cette liberté donnée aux joueurs a conquis un large publique, créant une vaste communauté de fans, de créateurs et de développeurs, qui enrichissent le jeu. Cet enthousiasme a mené au portage du jeu sur d'autres plateformes avec la «&nbsp;Bedrock Edition&nbsp;».</p>
+					<p>La version orignale, nommée «&nbsp;Java Edition&nbsp;», permet une grande modularité dans le système de jeu, d'où la multitude de serveurs proposant un jeu tourné vers le jeu de rôle (RolePlay) avec des sytèmes de villes et d'économie, le combat (PvP), ou encore les mini-jeux. De nombreuses variantes existent, et parmis elles, il y a celles proposées par EagleCraft.</p>
+				<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		<div class="panel bg2">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+					<h3>Java Edition ? Bedrock Edition ?</h3>
+					<p>Minecraft Java Edition est la version originale de Minecraft, disponible pour ordinateurs, nécéssitant Java sous Windows, Mac ou Linux. Vous devez l'avoir préalablement installé pour jouer sur EagleCraft. Rendez-vous sur <a href="http://minecraft.net" target="_blank" rel="noopener">Minecraft.net</a> pour plus d'informations.</p>
+					<p>Minecraft, ou Bedrock Edition, est l'ensemble des versions pour smartphones (Anciennement «&nbsp;Pocket Edition&nbsp;») et consoles, sur lesquelles les joueurs peuvent se rejoindre depuis la mise à jour «&nbsp;Better Together&nbsp;». En revanche, ils ne peuvent pas jouer sur les serveurs Java Edition.</p>
+				<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		</div>
+
+		<div class="right-column float-right">
+		<div class="panel bg2">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+					<h3>Un serveur «&nbsp;à l'ancienne&nbsp;»</h3>
+					<p>Durant les premières années 2010, les serveurs Minecraft étaient des petites communautés chaleureuses avec un l'esprit d'être entre amis. C'est cet esprit amical que nous voulons conserver ici. De plus, ces serveurs proposaient juste de jouer au but original du jeu : Survivre, récolter des ressources, et surtout construire. C'est ce mode de jeu, en un peu plus RolePlay, qui est aujourd'hui le principal d'EagleCraft, dans les mondes Semi-RP.</p>
+				<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		
+		<div class="panel bg4">
+			<div class="inner">
+				<span class="corners-top"><span></span></span>
+					<h3>Contact</h3>
+					<p>Vous pouvez contacter l'administration d'EagleCraft sur la <a href="contact.php.html" title="Contacter l’administration d’EagleCraft">page de contact de ce site</a>.</p>
+				<span class="corners-bottom"><span></span></span>
+			</div>
+		</div>
+		
+		</div>
+
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.010s | 8 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

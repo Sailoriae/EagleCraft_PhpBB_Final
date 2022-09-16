@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Consulter le sujet : Serveur Minecraft hors ligne (MàJ le 25 aout)" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Toutes les informations et nouveautés sur EagleCraft." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Consulter le sujet : Serveur Minecraft hors ligne (MàJ le 25 aout)" />
+<meta property="og:url" content="https://eaglecraft.fr/viewtopic.php?f=14&amp;t=519" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Toutes les informations et nouveautés sur EagleCraft." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="viewtopic.php@f=14&amp;t=519.html" />
+
+<title>EagleCraft - Consulter le sujet : Serveur Minecraft hors ligne (MàJ le 25 aout)</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-viewtopic">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="viewtopic.php@f=14&amp;t=519.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		<div class="main-title bgi1">
+			<h1 style="font-size: 16px;">Consulter le sujet : Serveur Minecraft hors ligne (MàJ le 25 aout)</h1>
+			
+		</div><div itemscope itemtype="http://schema.org/BreadcrumbList">
+			<span style="display: none;" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+					<span itemprop="name">EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="forum.php.html" accesskey="h" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/forum.php">
+					<span itemprop="name">Forums</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=13.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=13">
+					<span itemprop="name">Vie sur EagleCraft</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a href="viewforum.php@f=14.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/viewforum.php&f=14">
+					<span itemprop="name">L'EagleNews (Actualité du serveur)</span>
+				</a>
+				<meta itemprop="position" content="4" />
+			</span>
+			&nbsp;<strong>&rsaquo;</strong>&nbsp;<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<span>
+					<span itemprop="name">Serveur Minecraft hors ligne (MàJ le 25 aout)</span>
+				</span>
+				<meta itemprop="position" content="5" />
+			</span>
+		</div>
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<!--
+			Style a la con du chaos cause par Discord
+		-->
+		<style type="text/css">
+		@media screen and (min-width:749px) {
+			#message-box {
+				width: 98%;
+			}
+		}
+		</style>
+
+		<!--
+			NOTE: Supprimer style="display: none !important;" pour afficher la description du forum
+		-->
+		<div style="display: none !important;">Toutes les informations et nouveautés sur EagleCraft.<br /></div>
+		<div class="rules">
+			
+				<h3>Règles du forum </h3>
+				Les messages publiés ici (Exceptés les réponses) s'affichent sur la page d'accueil du site. Merci aux personnes ayant l'autorisation de poster ce type de message d'héberger les éventuelles images en pièces jointes, et de faire en sorte qu'elles ne dépassent pas 500 Ko ! Par exemple, si il n'y a pas de transparence, convertissez-les en JPEG. C'est le cas notamment pour les captures d'écran. Cela permet d'alléger le chargement de la page d'accueil.<br />Par ailleurs, notez que tout le monde, sauf les Vagabonds, peut répondre aux messages.
+			
+		</div>
+		
+
+		<div class="topic-actions">
+			<div class="buttons">
+			
+			</div>
+
+			
+			<div class="pagination">
+				3 messages
+				<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div>Page <strong>1</strong> sur <strong>1</strong>
+			</div>
+			
+		</div>
+
+		<div class="clear"></div>
+
+		<br />
+
+		
+		<div class="vtouter" id="p1240">
+			<div class="vtinner">
+				<div class="vtdatebar">
+					<div class="floatleft">
+						<h3 class="vtsubject mp user-offline"><a href="viewtopic.php@f=14&amp;t=519.html#p1240" class="tablet">Serveur Minecraft hors ligne (MàJ le 25 aout)</a></h3>
+					</div>
+					<div class="floatright">
+						<span class="vtdate"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " /> Lun 13 Août 2018, 13:00</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="vtprofilepanel phones" style="padding: 9px;">
+					<h3 class="vtsubject mp" style="padding: 0; height: auto;"><a href="viewtopic.php@f=14&amp;t=519.html#p1240">Serveur Minecraft hors ligne (MàJ le 25 aout)</a></h3>
+				</div>
+
+				<div class="vtprofilepanel">
+					<div style="text-align: center;">
+						<span class="vtusername"><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></span>
+						<img src="download/file.php@avatar=2_1594032706.gif" width="105" height="105" alt="Avatar de l’utilisateur" /><br /><span class="ranktitle">Président(e) du Conseil</span>
+					</div>
+					<br />
+					<div class="vtprofileinfo">
+						<strong>Messages :</strong> 175<br /><strong>Localisation :</strong> En train de lire par dessus ton épaule !<br />
+					</div>
+				</div>
+
+				<div class="vtcontent">
+
+					<div class="vtcontrolbuttons">
+						
+					</div>
+
+					<div class="clear"></div>
+
+					
+
+					<div id="textwithlists" class="content" id="postdiv1240">Youhou ! Il y a encore quelqu'un ?<br />J'imagine que les derniers joueurs actifs d'EagleCraft sont en vacances...<br />Bref...<br /><br /><span style="font-weight: bold">Bonjour à tous !</span><br />Enfin... <span style="font-weight: bold">Bonjour à ceux qui lisent ceci !</span> ^^<br /><br />Je n'ai reçu aucun message pour me l'avertir, comme quoi EagleCraft sent un peu l'abandon. Mais bon : Je vais quand même prévenir...<br /><br />Le serveur Minecraft subit de nombreux problèmes techniques depuis le 25 juillet 2018, causant de nombreux et longs arrêts, et est complètements hors ligne depuis le 4 aout.<br />Le problème vient du système d'exploitation, et il m'est impossible pour le moment de remettre en route le serveur Minecraft.<br />Ainsi, EagleCraft sera hors ligne jusqu'au 20 aout... Environ. Je pense que je ferais un réinstallation complète du serveur afin de repartir avec une &quot;clean install&quot;... Si ça intéresse encore des gens.<br /><br />Mais apparemment, oui, ça intéresserait Regorf et Auldeor qui se sont lancés dans un projet complètements pharaonique, et très long à construire. Ainsi, EagleCraft est plutôt garantie pour sa septième année... Sinon je me ferais bien engueuler. <img src="images/smilies/icon_e_biggrin.gif" alt=":D" title="Heureux" /> Et j'aurais des remords je pense. ^^<br /><br />Voilààà. Si vous êtes en vacances, je vous en souhaite de bonnes.<br />Je reviendrais pour poster le traditionnel message de l'anniversaire d'EagleCraft. C'est qu'il va avoir 6 ans le 31, et donc il faut que je refasse un logo au Spawn.<br /><br /><span style="font-weight: bold">Mise à jour du 25 aout 2018 :</span> Le disque dur du serveur est HS. <!-- l --><a class="postlink-local" href="https://eaglecraft.fr.nf/viewtopic.php?f=14&amp;t=519&amp;p=1242#p1242">viewtopic.php?f=14&amp;t=519&amp;p=1242#p1242</a><!-- l --><br /><br /><span style="font-weight: bold">Bonne journée !</span><br />Brohoof ? ^^</div>
+
+					<div id="sig1240" class="signature"><span style="font-size: 150%; line-height: 116%;">Sailoriae</span>, admin système et dév d'EagleCraft.</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<br />
+		
+		<div class="vtouter" id="p1241">
+			<div class="vtinner">
+				<div class="vtdatebar">
+					<div class="floatleft">
+						<h3 class="vtsubject mp user-offline"><a href="viewtopic.php@f=14&amp;t=519.html#p1241" class="tablet">EagleCraft est de nouveau en ligne</a></h3>
+					</div>
+					<div class="floatright">
+						<span class="vtdate"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " /> Mar 21 Août 2018, 21:25</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="vtprofilepanel phones" style="padding: 9px;">
+					<h3 class="vtsubject mp" style="padding: 0; height: auto;"><a href="viewtopic.php@f=14&amp;t=519.html#p1241">EagleCraft est de nouveau en ligne</a></h3>
+				</div>
+
+				<div class="vtprofilepanel">
+					<div style="text-align: center;">
+						<span class="vtusername"><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></span>
+						<img src="download/file.php@avatar=2_1594032706.gif" width="105" height="105" alt="Avatar de l’utilisateur" /><br /><span class="ranktitle">Président(e) du Conseil</span>
+					</div>
+					<br />
+					<div class="vtprofileinfo">
+						<strong>Messages :</strong> 175<br /><strong>Localisation :</strong> En train de lire par dessus ton épaule !<br />
+					</div>
+				</div>
+
+				<div class="vtcontent">
+
+					<div class="vtcontrolbuttons">
+						
+					</div>
+
+					<div class="clear"></div>
+
+					
+
+					<div id="textwithlists" class="content" id="postdiv1241"><span style="font-weight: bold">Boop !</span><br />Petit message rapidement pour dire que <span style="font-weight: bold">le serveur Minecraft est de nouveau en ligne</span>.<br />J'ai passé la journée à remettre le système en place, il y avait beaucoup de problèmes, c'est pourquoi je n'ai pas pu relancer EagleCraft hier.<br /><br />La dernière sauvegarde utilisable datait du 4 aout, donc il ne doit pas y avoir beaucoup de pertes.<br /><br /><span style="font-weight: bold">Bon jeu ! ^^</span></div>
+
+					<div id="sig1241" class="signature"><span style="font-size: 150%; line-height: 116%;">Sailoriae</span>, admin système et dév d'EagleCraft.</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<br />
+		
+		<div class="vtouter" id="p1242">
+			<div class="vtinner">
+				<div class="vtdatebar">
+					<div class="floatleft">
+						<h3 class="vtsubject mp user-offline"><a href="viewtopic.php@f=14&amp;t=519.html#p1242" class="tablet">Disque dur HS</a></h3>
+					</div>
+					<div class="floatright">
+						<span class="vtdate"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " /> Sam 25 Août 2018, 11:13</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="vtprofilepanel phones" style="padding: 9px;">
+					<h3 class="vtsubject mp" style="padding: 0; height: auto;"><a href="viewtopic.php@f=14&amp;t=519.html#p1242">Disque dur HS</a></h3>
+				</div>
+
+				<div class="vtprofilepanel">
+					<div style="text-align: center;">
+						<span class="vtusername"><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></span>
+						<img src="download/file.php@avatar=2_1594032706.gif" width="105" height="105" alt="Avatar de l’utilisateur" /><br /><span class="ranktitle">Président(e) du Conseil</span>
+					</div>
+					<br />
+					<div class="vtprofileinfo">
+						<strong>Messages :</strong> 175<br /><strong>Localisation :</strong> En train de lire par dessus ton épaule !<br />
+					</div>
+				</div>
+
+				<div class="vtcontent">
+
+					<div class="vtcontrolbuttons">
+						
+					</div>
+
+					<div class="clear"></div>
+
+					
+
+					<div id="textwithlists" class="content" id="postdiv1242"><span style="font-weight: bold">Boop again !</span><br />Bon.<br /><span style="font-weight: bold">Le disque dur du serveur qui héberge le serveur Minecraft d'EagleCraft est presque mort.</span><br /><br />Il faut que j'en rachète un, etc... Je ne sais donc pas quand EagleCraft sera de nouveau opérationnel.<br />D'ailleurs : Est ce que ça vaut le coup ? Telle est la question.<br /><br /><span style="font-weight: bold">Stay tuned !</span></div>
+
+					<div id="sig1242" class="signature"><span style="font-size: 150%; line-height: 116%;">Sailoriae</span>, admin système et dév d'EagleCraft.</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<br />
+		
+		<form id="viewtopic" method="post" action="viewtopic.php@f=14&amp;t=519.html">
+
+		<fieldset class="display-options" style="margin-top: 0; ">
+			
+		</fieldset>
+
+		</form>
+		<hr />
+		
+
+		<div class="topic-actions">
+			<div class="buttons">
+			
+			</div>
+
+			<div class="pagination">
+				3 messages
+				<span class="tablet">&nbsp;&bull;&nbsp;</span><div class="clear phones"></div>Page <strong>1</strong> sur <strong>1</strong>
+			</div>
+
+		</div>
+
+		<p></p><p><a href="viewforum.php@f=14.html" class="left-box tablet left" accesskey="r">Retour vers  L'EagleNews (Actualité du serveur)</a></p>
+		
+		<div class="clear"></div>
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.016s | 13 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>

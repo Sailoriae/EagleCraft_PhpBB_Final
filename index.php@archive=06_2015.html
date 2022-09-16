@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
+<head>
+
+<!--
+	Site et Forum d'EagleCraft, basé sur phpBB et le thème de Christian Bullock.
+-->
+<!--
+	Style phpBB basé sur Absolution par Christian Bullock.
+	Ce dernier est basé sur Prosilver par Tom Beddard.
+	Modifiés exclusivement pour EagleCraft.
+-->
+
+<!--
+	Salut à toi, humble visiteur de mon code source !
+-->
+
+
+<!--
+	METAS
+-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="EagleCraft - Archive Juin 2015" />
+<meta name="identifier-url" content="https://eaglecraft.fr/" />
+<meta name="description" content="Consultez l'actualité et les nouveautés d'EagleCraft." />
+<meta name="keywords" content="eaglecraft, serveur, minecraft, mc, java, multi, survie, smp, java, pc, semi, rp, roleplay, role, play, ville, commerce, grade, pvp, minijeux, mini, jeux, minigames, gratuit, fr, france, francophone" />
+<link rel="author" type="text/plain" href="https://eaglecraft.fr/humans.txt" />
+<meta name="copyright" content="(C) EagleCraft" />
+
+<meta property="og:title" content="EagleCraft - Archive Juin 2015" />
+<meta property="og:url" content="https://eaglecraft.fr/index.php?archive=06_2015" />
+<meta property="og:site_name" content="Serveur Minecraft Semi-RP depuis 2012" />
+<meta property="og:description" content="Consultez l'actualité et les nouveautés d'EagleCraft." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://eaglecraft.fr/images/thumb_square.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+
+<link rel="canonical" href="index.php@archive=06_2015.html" />
+
+<title>EagleCraft - Archive Juin 2015</title>
+
+
+<!--
+	https://realfavicongenerator.net
+	NB : Ne pas mettre Apple en FullScreen, c'est uniquement pour des pages webs uniques comme par exemple Dynmap.
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="images/app/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/app/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/app/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="mask-icon" href="images/app/safari-pinned-tab.svg" color="#003b62" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="EagleCraft" />
+<meta name="application-name" content="EagleCraft" />
+<meta name="msapplication-TileColor" content="#003b62" />
+<meta name="msapplication-config" content="./browserconfig.xml" />
+<meta name="theme-color" content="#003b62" />
+
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"@id": "https://eaglecraft.fr#organization",
+	"name": "EagleCraft",
+	"url": "https://eaglecraft.fr",
+	"logo": "https://eaglecraft.fr/images/app/android-chrome-512x512.png",
+	"image": "https://eaglecraft.fr/images/thumb.jpg",
+	"description": "Un serveur Minecraft Semi-RolePlay à l'ancienne, avec villes, commerces et grades. Actuellement en 1.18.2 (Java Edition).",
+	"sameAs": [
+		"https://twitter.com/EagleCraft_MC"
+	]
+}
+</script>
+
+
+
+
+
+<!--
+	SCRIPTS
+-->
+
+<!-- jQuery sert uniquement pour la Barre de Navigation (Voir en dessous du Footer) -->
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.min.js"></script>
+
+<script type="text/javascript" src="styles/eaglecraft/template/forum_fn.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Saisissez le numéro de la page que vous souhaitez atteindre:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+
+
+
+
+<!--
+	STYLE
+-->
+
+<link href="style.php@id=1&amp;lang=fr.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body id="phpbb" class="nojs section-index">
+
+<script type="text/javascript">
+// <![CDATA[
+	$("body").removeClass("nojs").addClass("js");
+// ]]>
+</script>
+
+
+<!--
+	HEADER
+-->
+<header id="page-header">
+	<div id="logo"><a href="index.php.html" title="Serveur Minecraft Semi-RP depuis 2012"><img src="styles/eaglecraft/imageset/logo.png" alt="" title="" /></a></div>
+</header>
+<!--
+	/HEADER
+-->
+
+
+<!--
+	NAVBAR
+-->
+
+<div id="bar" class="fixme">
+	<nav id="nav">
+		
+
+		<div class="float-left tablet">
+			<ul>
+				<li class="divider"></li>
+				<li class="active">
+					<a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a style="cursor: pointer;" title="Codex (Wiki)" class="mobile"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<a href="codex.php@page=accueil.html" title="Codex (Wiki)" class="desktop"><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Codex (Wiki)</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="codex.php@page=accueil.html"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />&nbsp;Accueil</a></li>
+						<li><a href="codex.php@page=guide_des_nouveaux_joueurs.html"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />&nbsp;Guide des Nouveaux Joueurs</a></li>
+						<li><hr/><a href="codex.php@page=mondes.html"><img src="styles/eaglecraft/theme/images/navigation/codex/mondes.png" width="16" height="16" alt="" />&nbsp;Mondes</a></li>
+						<li><a href="codex.php@page=constructions_et_habitations.html"><img src="styles/eaglecraft/theme/images/navigation/codex/constructions_et_habitations.png" width="16" height="16" alt="" />&nbsp;Constructions &amp; Habitations</a></li>
+						<li><a href="codex.php@page=commercer.html"><img src="styles/eaglecraft/theme/images/navigation/codex/commercer.png" width="16" height="16" alt="" />&nbsp;Commercer</a></li>
+						<li><a href="codex.php@page=guides_divers.html"><img src="styles/eaglecraft/theme/images/navigation/codex/guides_divers.png" width="16" height="16" alt="" />&nbsp;Guides Divers</a></li>
+						<li><a href="codex.php@page=grades.html"><img src="styles/eaglecraft/theme/images/navigation/codex/grades.png" width="16" height="16" alt="" />&nbsp;Grades</a></li>
+						<li><hr/><a href="codex.php@page=etre_responsable_de_projet.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_responsable_de_projet.png" width="16" height="16" alt="" />&nbsp;Etre Responsable de Projet</a></li>
+						<li><a href="codex.php@page=etre_membre_du_conseil.html"><img src="styles/eaglecraft/theme/images/navigation/codex/etre_membre_du_conseil.png" width="16" height="16" alt="" />&nbsp;Etre Membre du Conseil</a></li>
+						<li><hr/><a href="codex.php@page=regles_generales.html"><img src="styles/eaglecraft/theme/images/navigation/codex/regles_generales.png" width="16" height="16" alt="" />&nbsp;Règles Générales</a></li>
+						<li><a href="codex.php@page=echelle_des_infractions.html"><img src="styles/eaglecraft/theme/images/navigation/codex/echelle_des_infractions.png" width="16" height="16" alt="" />&nbsp;Echelle des Infractions</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+
+		<div class="float-left phones">
+			<ul>
+				<li class="divider"></li>
+				<li>
+					<a><img src="styles/eaglecraft/theme/images/navigation/codex_drop.png" width="16" height="16" alt="" />Menu</a>
+					<div class="clear"></div>
+					<ul class="drop">
+						<li><a href="index.php.html" title="Accueil"><img src="styles/eaglecraft/theme/images/navigation/accueil.png" width="16" height="16" alt="" />Accueil</a></li>
+						<li><a href="forum.php.html" title="Forums"><img src="styles/eaglecraft/theme/images/navigation/forum.png" width="16" height="16" alt="" />Forums</a></li>
+						<li><a href="jouer.php.html" title="Jouer"><img src="styles/eaglecraft/theme/images/navigation/jouer.png" width="16" height="16" alt="" />Jouer</a></li>
+						<li><a href="codex.php@page=accueil.html" title="Codex"><img src="styles/eaglecraft/theme/images/navigation/codex.png" width="16" height="16" alt="" />Codex (Wiki)</a></li>
+						<li><a href="cartes.php.html" title="Cartes"><img src="styles/eaglecraft/theme/images/navigation/cartes.png" width="16" height="16" alt="" />Cartes</a></li>
+						<li><a href="about.php.html" title="A Propos"><img src="styles/eaglecraft/theme/images/navigation/about.png" width="16" height="16" alt="" />A Propos</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--
+	/NAVBAR
+-->
+
+
+<!--
+	NOISE
+-->
+<div id="noise">
+
+	<!--
+		WRAP
+	-->
+	<div id="wrap" class="wrapfixme">
+
+	<p class="skiplink"><a href="index.php@archive=06_2015.html#start_here">Accéder au contenu</a></p>
+	<a id="top" accesskey="t"></a>
+
+	<!--
+		CONTENT-PADDING
+	-->
+	<div id="content-padding">
+
+	<!--
+		PAGE-BODY
+	-->
+	<main id="page-body">
+
+		
+
+		<!--
+			DEBUT DU CONTENU DE LA PAGE
+		-->
+		
+
+		<!--
+			Style a la con du chaos causé par Discord
+		-->
+		<style type="text/css">
+		/* NEWPAGE */
+
+		
+
+		div.archive {
+			background: #EBEBEB;
+		}
+
+		div.archive_block {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-left: 4px;
+			border-bottom: 1px solid #CCCCCC;
+			font-weight: bold;
+		}
+
+		div.archive_row {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-left: 4px;
+			border-top: 1px solid #FFFFFF;
+			border-bottom: 1px solid #CCCCCC;
+		}
+
+		div.archive_row-last {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-left: 4px;
+			border-top: 1px solid #FFFFFF;
+		}
+
+		/* BIENVENUE */
+
+		#bienvenue {
+			margin-bottom: 5px;
+			padding: 3%;
+			border-radius: 5px;
+			background: url("styles/eaglecraft/template/pages/accueil/fond.jpg") center;
+			background-size: cover;
+		}
+
+		#bienvenue h1,
+		#bienvenue h2,
+		#bienvenue p {
+			text-align: center;
+			color: #ffffff;
+		}
+
+		#bienvenue-welcome {
+			font-size: 40px;
+			margin: 5% 0 0 0;
+		}
+
+		#bienvenue-desc {
+			font-size: 20px;
+		}
+		@media screen and (min-width:750px) {
+			#bienvenue-desc {
+				margin: 0 0 5% 0;
+			}
+		}
+		@media screen and (max-width:749.99px) {
+			#bienvenue-desc {
+				margin: 5% 0 5% 0;
+			}
+		}
+
+		p.bienvenue-liens {
+			margin: 0 0 5% 0;
+		}
+		.bienvenue-liens a {
+			padding: 3px;
+			display: inline-block;
+			margin: 1%;
+		}
+		.bienvenue-liens a img {
+			margin-right: 3px;
+			vertical-align: middle;
+		}
+
+		
+		</style>
+
+
+		
+
+
+		<div class="left-column float-left">
+			<div itemscope itemtype="http://schema.org/BreadcrumbList">
+				<span style="display: none;" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a href="index.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr">
+						<span itemprop="name">EagleCraft</span>
+					</a>
+					<meta itemprop="position" content="1" />
+				</span>
+			
+				<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a href="index.php.html" itemscope itemtype="http://schema.org/Thing" itemprop="item" itemid="https://eaglecraft.fr/index.php">
+						<span itemprop="name">Accueil</span>
+					</a>
+					<meta itemprop="position" content="2" />
+				</span>&nbsp;<strong>&rsaquo;</strong>&nbsp;
+				<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<span>
+						<span itemprop="name">Archive Juin 2015</span>
+					</span>
+					<meta itemprop="position" content="3" />
+				</span>
+			
+			</div>
+
+			<div id="title" class="main-title bgi4"><h1>Archive Juin 2015</h1></div>
+			
+				<!--
+					DEBUT News Complete
+				-->
+				<div id="p439" class="post bg2">
+					<div class="inner"><span class="corners-top"><span></span></span>
+					<div class="postbody" style="width: 100%;">
+					<h3 class="first"><a href="index.php@news=195.html">Les nouveautés du printemps : Minigames !</a></h3>
+						<p class="author"><img src="styles/eaglecraft/imageset/icon_post_target.gif" width="11" height="9" alt="Message " title="Message " />par <strong><span style="color: #AA0000;" class="username-coloured">Sailoriae</span></strong> » Sam 13 Juin 2015, 19:15 </p>
+
+						
+
+						<div class="inner"><span style="font-weight: bold">Bonjour à tous !</span><br />Si vous ne l'avez pas remarqué, c'est le moment de vous mettre à jour !<br /><br />Des mini-jeux (Minigames) sont disponibles sur EagleCraft ! Découvrez maintenant des Spleefs et des Skywars, pour vous défouler facilement et gagner des Eagles. Vous pouvez y accéder depuis World Of Fun ou plus facilement via le <span style="font-style: italic">/menu</span>.<br />Ces jeux sont entièrement automatisés, et vos inventaires sont automatiquement sauvegardés. D'autres jeux seront disponibles à l'avenir, mais ces idées sont pour le moment à  [...]</div>
+
+						<br /><a href="index.php@news=195.html"><strong>Lire en entier...</strong></a></em>
+						<div class="notice">
+							
+							<strong>Lien vers le topic:</strong> <em><a href="viewtopic.php@p=439.html#p439">Les nouveautés du printemps : Minigames !</a></em><br />
+							<strong>Commentaires:</strong> <em>0</em>
+						</div>
+					</div>
+
+				
+					<!-- <div class="back2top"><a href="#wrap" class="top" title="Haut">Haut</a></div> -->
+
+					<span class="corners-bottom"><span></span></span></div>
+				</div>
+				<!--
+					FIN News Complete
+				-->
+				
+		</div>
+
+
+		<div class="right-column float-right">
+		
+
+			<div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2022</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=09_2022.html">Septembre</a> (1), <a class="news-archive" href="index.php@archive=08_2022.html">Août</a> (2), <a class="news-archive" href="index.php@archive=02_2022.html">Février</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2021</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=10_2021.html">Octobre</a> (1), <a class="news-archive" href="index.php@archive=08_2021.html">Août</a> (1), <a class="news-archive" href="index.php@archive=05_2021.html">Mai</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2020</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=08_2020.html">Août</a> (1), <a class="news-archive" href="index.php@archive=07_2020.html">Juillet</a> (1), <a class="news-archive" href="index.php@archive=04_2020.html">Avril</a> (2), <a class="news-archive" href="index.php@archive=01_2020.html">Janvier</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2019</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=12_2019.html">Décembre</a> (1), <a class="news-archive" href="index.php@archive=08_2019.html">Août</a> (1), <a class="news-archive" href="index.php@archive=07_2019.html">Juillet</a> (1), <a class="news-archive" href="index.php@archive=01_2019.html">Janvier</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2018</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=12_2018.html">Décembre</a> (1), <a class="news-archive" href="index.php@archive=11_2018.html">Novembre</a> (1), <a class="news-archive" href="index.php@archive=10_2018.html">Octobre</a> (1), <a class="news-archive" href="index.php@archive=08_2018.html">Août</a> (3), <a class="news-archive" href="index.php@archive=05_2018.html">Mai</a> (1), <a class="news-archive" href="index.php@archive=03_2018.html">Mars</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2017</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=11_2017.html">Novembre</a> (1), <a class="news-archive" href="index.php@archive=10_2017.html">Octobre</a> (3), <a class="news-archive" href="index.php@archive=08_2017.html">Août</a> (3), <a class="news-archive" href="index.php@archive=06_2017.html">Juin</a> (3), <a class="news-archive" href="index.php@archive=04_2017.html">Avril</a> (2), <a class="news-archive" href="index.php@archive=03_2017.html">Mars</a> (1), <a class="news-archive" href="index.php@archive=02_2017.html">Février</a> (1), <a class="news-archive" href="index.php@archive=01_2017.html">Janvier</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2016</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=12_2016.html">Décembre</a> (3), <a class="news-archive" href="index.php@archive=10_2016.html">Octobre</a> (1), <a class="news-archive" href="index.php@archive=08_2016.html">Août</a> (1), <a class="news-archive" href="index.php@archive=07_2016.html">Juillet</a> (3), <a class="news-archive" href="index.php@archive=06_2016.html">Juin</a> (1), <a class="news-archive" href="index.php@archive=05_2016.html">Mai</a> (1), <a class="news-archive" href="index.php@archive=04_2016.html">Avril</a> (1), <a class="news-archive" href="index.php@archive=03_2016.html">Mars</a> (3), <a class="news-archive" href="index.php@archive=02_2016.html">Février</a> (2), <a class="news-archive" href="index.php@archive=01_2016.html">Janvier</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2015</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=08_2015.html">Août</a> (1), <a class="news-archive" href="index.php@archive=06_2015.html">Juin</a> (1), <a class="news-archive" href="index.php@archive=04_2015.html">Avril</a> (1), <a class="news-archive" href="index.php@archive=02_2015.html">Février</a> (3)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+				<div class="panel archive"><span class="corners-top"><span></span></span>
+				<div class="archive_block">Archives 2014</div>
+					
+					<div class="archive_row-last">
+						<strong><a class="news-archive" href="index.php@archive=11_2014.html">Novembre</a> (1), <a class="news-archive" href="index.php@archive=08_2014.html">Août</a> (3), <a class="news-archive" href="index.php@archive=07_2014.html">Juillet</a> (1)</strong>
+					</div>
+					
+				<span class="corners-bottom"><span></span></span></div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		<!--
+			FIN DU CONTENU DE LA PAGE
+		-->
+		<div class="clear"></div>
+
+	</main>
+	<!--
+		/PAGE-BODY
+	-->
+
+	</div>
+	<!--
+		/CONTENT-PADDING
+	-->
+
+	</div>
+	<!--
+		/WRAP
+	-->
+
+</div>
+<!--
+	/NOISE
+-->
+
+
+<!--
+	FOOTER
+-->
+<footer id="page-footer">
+<div class="content-footer">
+
+<div class="footer-copy">
+	
+	<div class="left-column float-left">
+	<a href="https://eaglecraft.fr/humans.txt" target="_blank" rel="noopener">Humans.TXT</a> | Basé sur <a href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, utilisant la traduction française de <a href="http://www.maelsoucaze.com/" target="_blank" rel="noopener">Maël Soucaze</a> et le th&egrave;me de <a href="http://www.christianbullock.com" target="_blank" rel="noopener">Christian Bullock</a>.
+	<br/><br/>
+	&copy; EagleCraft 2012-2022. Tous droits r&eacute;serv&eacute;s.<br />
+	Reproduction totale ou partielle interdite.
+	</div>
+
+	<div class="right-column float-right">
+	EagleCraft est un serveur Minecraft Java Edition qui n'a aucune affiliation avec Mojang.
+	<br/><br/>
+	Le serveur Minecraft utilise <a href="http://spigotmc.org" target="_blank" rel="noopener">Spigot</a> ou <a href="http://papermc.io/" target="_blank" rel="noopener">Paper</a> en 1.18.2.
+	</div>
+
+	<div class="clear"></div>
+
+	<br/>
+	Temps : 0.022s | 14 requêtes
+</div>
+
+<hr/>
+
+<div class="footer-link">
+	<div class="float-left">
+		<a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/EagleCraft_MC"><img src="styles/eaglecraft/theme/images/social_icons/twitter.png" alt="Twitter" width="32" height="32" /></a><a class="float-left" style="margin: 2px;" target="_blank" rel="noopener" title="Discord" href="../discord.eaglecraft.fr/index.html"><img src="styles/eaglecraft/theme/images/social_icons/discord.png" alt="Discord" width="32" height="32" /></a>
+		<div class="float-left footer-copy" style="font-size: 12px;">Salutations de Bordeaux.</div>
+	</div>
+	
+</div>
+
+<a id="bottom" accesskey="z"></a>
+
+</div>
+</footer>
+<!--
+	/FOOTER
+-->
+
+
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.tipsy.js"></script>
+<script type="text/javascript" src="styles/eaglecraft/template/jquery.hoverIntent.js"></script>
+
+<!--
+	JS pour fixer la Barre de Navigation
+-->
+<script type='text/javascript'>
+//<![CDATA[
+if ($(document).width() > 750) {
+	$(window).load(function(){
+	var fixmeTop = $('.fixme').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop();
+		if (currentScroll >= fixmeTop) {
+			$('.fixme').css({
+				position: 'fixed',
+				top: '0',
+				left: '0'
+			})
+			$('.wrapfixme').css({
+				marginTop: '52px'
+			});
+		} else {
+			$('.fixme').css({
+				position: 'relative'
+			})
+			$('.wrapfixme').css({
+				marginTop: '0px'
+			});
+		}
+	});
+	});
+}
+//]]>
+</script>
+
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		$([window, document]).blur(function(){
+				$('ul.drop').css({display: 'none'});
+		});
+		if ($(document).width() > 980) {
+			$("#nav ul li").hoverIntent(function(){
+					$(this).children("ul").slideDown();
+				},function(){
+					$(this).children("ul").slideUp();
+			});
+		} else {
+			$("#nav ul li").click(function(){
+					$(this).children("ul").slideToggle();
+			});
+		}
+	});
+// ]]>
+</script>
+
+<script type='text/javascript'>
+// <![CDATA[
+	$(function() {
+		$('.tip').tipsy({fade: true, gravity: 's'});
+   	});
+// ]]>
+</script>
+
+</body>
+
+</html>
