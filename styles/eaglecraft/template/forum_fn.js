@@ -25,13 +25,13 @@ function jumpto()
 
 	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
 	{
-		if (base_url.indexOf('?') == -1)
+		if (base_url.indexOf('@') == -1)
 		{
-			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+			document.location.href = base_url + '@start=' + ((page - 1) * per_page + '.html');
 		}
 		else
 		{
-			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page + '.html');
 		}
 	}
 }
