@@ -4,7 +4,23 @@
 <head>
 
 <script type="text/javascript">
-if ( window.location.href.includes("?") ) window.location.replace( window.location.href.replace("?", "@") + ".html" );
+const archives = ["01_2016","01_2017","01_2019","01_2020","02_2015","02_2016","02_2017","02_2022","03_2016","03_2017","03_2018","04_2015","04_2016","04_2017","04_2020","05_2016","05_2018","05_2021","06_2015","06_2016","06_2017","07_2014","07_2016","07_2019","07_2020","08_2014","08_2015","08_2016","08_2017","08_2018","08_2019","08_2020","08_2021","08_2022","09_2022","10_2016","10_2017","10_2018","10_2021","11_2014","11_2017","11_2018","12_2016","12_2018","12_2019"];
+const news = [130,131,140,156,195,2,255,26,301,303,308,317,318,319,330,331,335,345,347,348,356,366,393,394,395,409,424,431,440,443,451,452,456,46,464,473,475,486,487,488,496,510,515,519,520,521,526,527,535,545,559,562,57,570,577,606,610,631,662,664,671,672,674,677,679,680,93];
+const starts = [18,27,36,45,54,63,9];
+const params = (new URL(document.location)).searchParams;
+if ( params.has("archive") ) {
+	const archive = params.get("archive");
+	if ( archives.includes(archive) )
+		window.location.replace( `index.php@archive=${archive}.html` );
+} else if ( params.has("news") ) {
+	const news_id = parseInt( params.get("news") );
+	if ( !isNaN(news_id) && news.includes(news_id) )
+		window.location.replace( `index.php@news=${news_id}.html` );
+} else if ( params.has("start") ) {
+	const start = parseInt( params.get("start") );
+	if ( !isNaN(start) && starts.includes(start) )
+		window.location.replace( `index.php@start=${start}.html` );
+}
 </script>
 
 <!--

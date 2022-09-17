@@ -4,8 +4,22 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>EagleCraft - Redirection...</title>
 <script type="text/javascript">
-if ( window.location.href.includes("?") ) window.location.replace( window.location.href.replace("?", "@") + ".html" );
-else window.location.replace( "./index.html" )
+const forums = [1,10,11,12,13,14,15,17,18,2,20,21,22,23,24,25,26,27,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,55,56,57,58,59,6,60,61,62,68,7,8,9]
+const forum_to_starts = {14:[25,50],2:[100,125,150,175,25,50,75],25:[25],3:[25,50]};
+const params = (new URL(document.location)).searchParams;
+if ( params.has("f") ) {
+	const forum_id = parseInt( params.get("f") );
+	if ( isNaN(forum_id) || !forums.includes(forum_id) )
+		window.location.replace( "404.html" );
+	else {
+		const start = parseInt( params.get("start") );
+		if ( !isNaN(start) && forum_id in forum_to_starts && start in forum_to_starts[forum_id] )
+			window.location.replace( `viewforum.php@f=${forum_id}&start=${start}.html` );
+		else
+			window.location.replace( `viewforum.php@f=${forum_id}.html` );
+	}
+} else
+	window.location.replace( "404.html" );
 </script>
 </head>
 <body>

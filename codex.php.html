@@ -4,8 +4,16 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>EagleCraft - Redirection...</title>
 <script type="text/javascript">
-if ( window.location.href.includes("?") ) window.location.replace( window.location.href.replace("?", "@") + ".html" );
-else window.location.replace( "./index.html" )
+const pages = ["accueil","commercer","constructions_et_habitations","echelle_des_infractions","etre_membre_du_conseil","etre_responsable_de_projet","grades","guides_divers","guide_des_nouveaux_joueurs","mondes","regles_generales"];
+const params = (new URL(document.location)).searchParams;
+if ( params.has("page") ) {
+	const page_name = params.get("page");
+	if ( pages.includes(page_name) )
+		window.location.replace( `codex.php@page=${page_name}.html` );
+	else
+		window.location.replace( "404.html" );
+} else
+	window.location.replace( "404.html" );
 </script>
 </head>
 <body>
