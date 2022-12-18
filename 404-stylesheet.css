@@ -13,12 +13,12 @@ body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	color: #FFF;
-	background: url("/styles/eaglecraft/theme/images/bodybg.gif") repeat-x left top #003b62;
+	background: url("styles/eaglecraft/theme/images/bodybg.gif") repeat-x left top #003b62;
 }
 
 div#noise {
 	min-height: 100%;
-	background-image: url("/styles/eaglecraft/theme/images/noise.png");
+	background-image: url("styles/eaglecraft/theme/images/noise.png");
 }
 
 main {
